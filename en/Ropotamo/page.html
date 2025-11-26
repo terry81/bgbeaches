@@ -44,8 +44,27 @@
 <div id="content">
 <h1>TITLE_PLACEHOLDER</h1>
 <p align="justify">DESCRIPTION_PLACEHOLDER</p>
+<div class="photo-nav">
+  <a href="heaven.html" class="nav-prev">← Previous</a>
+  <a href="index.html" class="nav-back">← Back to Gallery</a>
+  <a href="pier.html" class="nav-next">Next →</a>
+</div>
 <div id="footer">
 Copyright &copy; 2025 Bulgarian Beaches. All Rights Reserved. Contact us at: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6612090a0a09020f0b26010b070f0a4805090b">[email&#160;protected]</a><br /> </div>
 </div>
+<div class="back-to-top" id="backToTop" title="Back to top">↑</div>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
+document.getElementById('backToTop').addEventListener('click', function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+</script>
 </body>
 </html>

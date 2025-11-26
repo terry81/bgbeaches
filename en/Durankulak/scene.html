@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
 <link rel="stylesheet" type="text/css" href="../../css/main.css" />
 <link rel="stylesheet" type="text/css" href="../../css/form.css" />
-<meta name="description" />
+<meta name="description" content="Photos and information about Scene on the Bulgarian Black Sea coast." />
 <title>Scene</title>
 </head>
 <body>
@@ -41,15 +41,34 @@
         </script>
 <div class="container" id="page">
 <div class="breadcrumbs">
-<a href="../index.html">BG Beaches</a> &raquo; <span>Scene</span></div>
+<a href="../index.html">Bulgarian Beaches</a> &raquo; <a href="index.html">Durankulak</a> &raquo; <span>Scene</span></div>
 <div class="container">
 <div id="content">
 <h1>Scene</h1>
 <p align="justify">Durankulak is suitable for making movies and this photo shows a scene.</p>
-<img src="../../albums/Durankulak/scene.jpg" alt="Durankulak is suitable for making movies and this photo shows a scene." class="images" />
+<img src="../../albums/Durankulak/scene.jpg" alt="Durankulak is suitable for making movies and this photo shows a scene." class="images" loading="lazy" />
+</div>
+<div class="photo-nav">
+  <a href="love.html" class="nav-prev">← Previous</a>
+  <a href="index.html" class="nav-back">← Back to Gallery</a>
+  <a href="storm_at_durankulak.html" class="nav-next">Next →</a>
 </div>
 <div id="footer">
 Copyright &copy; 2025 Bulgarian Beaches. All Rights Reserved. Contact us at: tollodim at gmail dot com<br /> </div>
 </div>
+<div class="back-to-top" id="backToTop" title="Back to top">↑</div>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
+document.getElementById('backToTop').addEventListener('click', function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+</script>
 </body>
 </html>
