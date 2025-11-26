@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
 <link rel="stylesheet" type="text/css" href="../../css/main.css" />
 <link rel="stylesheet" type="text/css" href="../../css/form.css" />
-<meta name="description" />
+<meta name="description" content="Photos and information about Monument on the Bulgarian Black Sea coast." />
 <title>Monument</title>
 </head>
 <body>
@@ -41,15 +41,34 @@
         </script>
 <div class="container" id="page">
 <div class="breadcrumbs">
-<a href="../index.html">BG Beaches</a> &raquo; <span>Monument</span></div>
+<a href="../index.html">Bulgarian Beaches</a> &raquo; <a href="index.html">Kaliakra</a> &raquo; <span>Monument</span></div>
 <div class="container">
 <div id="content">
 <h1>Monument</h1>
 <p align="justify">This is the monument of Fyodor Ushakov, the most illustrious Russian naval commander and admiral of the 18th century. It is believed that at Cape Kaliakra ended the Russian-Otoman war on 1787-1792 in which Fyodor Ushakov lead the Russian forces to victory. This is thought to be the greatest naval battle in the Black sea.</p>
-<img src="../../albums/Kaliakra/monument.jpg" alt="This is the monument of Fyodor Ushakov, the most illustrious Russian naval commander and admiral of the 18th century. It is believed that at Cape Kaliakra ended the Russian-Otoman war on 1787-1792 in which Fyodor Ushakov lead the Russian forces to victory. This is thought to be the greatest naval battle in the Black sea." class="images" />
+<img src="../../albums/Kaliakra/monument.jpg" alt="This is the monument of Fyodor Ushakov, the most illustrious Russian naval commander and admiral of the 18th century. It is believed that at Cape Kaliakra ended the Russian-Otoman war on 1787-1792 in which Fyodor Ushakov lead the Russian forces to victory. This is thought to be the greatest naval battle in the Black sea." class="images" loading="lazy" />
+</div>
+<div class="photo-nav">
+  <a href="model.html" class="nav-prev">← Previous</a>
+  <a href="index.html" class="nav-back">← Back to Gallery</a>
+  <a href="museum.html" class="nav-next">Next →</a>
 </div>
 <div id="footer">
 Copyright &copy; 2025 Bulgarian Beaches. All Rights Reserved. Contact us at: tollodim at gmail dot com<br /> </div>
 </div>
+<div class="back-to-top" id="backToTop" title="Back to top">↑</div>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
+document.getElementById('backToTop').addEventListener('click', function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+</script>
 </body>
 </html>

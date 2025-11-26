@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="../../css/print.css" media="print" />
 <link rel="stylesheet" type="text/css" href="../../css/main.css" />
 <link rel="stylesheet" type="text/css" href="../../css/form.css" />
-<meta name="description" />
+<meta name="description" content="Photos and information about Cart on the Bulgarian Black Sea coast." />
 <title>Cart</title>
 </head>
 <body>
@@ -41,15 +41,34 @@
         </script>
 <div class="container" id="page">
 <div class="breadcrumbs">
-<a href="../index.html">BG Beaches</a> &raquo; <span>Cart</span></div>
+<a href="../index.html">Bulgarian Beaches</a> &raquo; <a href="index.html">Karadere</a> &raquo; <span>Cart</span></div>
 <div class="container">
 <div id="content">
 <h1>Cart</h1>
 <p align="justify">That's the only road to Karadere... You have to travel more than 5 km offraod which is a real challenge when it rains. That's why the best transport is by cart :)</p>
-<img src="../../albums/Karadere/cart.jpg" alt="That's the only road to Karadere... You have to travel more than 5 km offraod which is a real challenge when it rains. That's why the best transport is by cart :)" class="images" />
+<img src="../../albums/Karadere/cart.jpg" alt="That's the only road to Karadere... You have to travel more than 5 km offraod which is a real challenge when it rains. That's why the best transport is by cart :)" class="images" loading="lazy" />
+</div>
+<div class="photo-nav">
+  <a href="beach.html" class="nav-prev">← Previous</a>
+  <a href="index.html" class="nav-back">← Back to Gallery</a>
+  <a href="child.html" class="nav-next">Next →</a>
 </div>
 <div id="footer">
 Copyright &copy; 2025 Bulgarian Beaches. All Rights Reserved. Contact us at: tollodim at gmail dot com<br /> </div>
 </div>
+<div class="back-to-top" id="backToTop" title="Back to top">↑</div>
+<script>
+window.addEventListener('scroll', function() {
+  var btn = document.getElementById('backToTop');
+  if (window.pageYOffset > 300) {
+    btn.classList.add('visible');
+  } else {
+    btn.classList.remove('visible');
+  }
+});
+document.getElementById('backToTop').addEventListener('click', function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+});
+</script>
 </body>
 </html>
