@@ -1,0 +1,29 @@
+{
+  "name": "bgbeaches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "clean": "rm -rf _site",
+    "build:production": "NODE_ENV=production eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terry81/bgbeaches.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/terry81/bgbeaches/issues"
+  },
+  "homepage": "https://github.com/terry81/bgbeaches#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "bg": [
+    {
+      "slug": "Ahtopol",
+      "name": "Ахтопол",
+      "photoCount": 18
+    },
+    {
+      "slug": "Albena_and_Kranevo",
+      "name": "Albena and Kranevo",
+      "photoCount": 7
+    },
+    {
+      "slug": "Arapya",
+      "name": "Арапя",
+      "photoCount": 2
+    },
+    {
+      "slug": "Balchik",
+      "name": "Балчик",
+      "photoCount": 53
+    },
+    {
+      "slug": "Burgas",
+      "name": "Бургас",
+      "photoCount": 12
+    },
+    {
+      "slug": "Byala",
+      "name": "Бяла",
+      "photoCount": 10
+    },
+    {
+      "slug": "Duni",
+      "name": "Дюни",
+      "photoCount": 10
+    },
+    {
+      "slug": "Durankulak",
+      "name": "Дуранкулак",
+      "photoCount": 25
+    },
+    {
+      "slug": "Elenite",
+      "name": "Елените",
+      "photoCount": 9
+    },
+    {
+      "slug": "Evksinograd",
+      "name": "Евксиноград",
+      "photoCount": 43
+    },
+    {
+      "slug": "Galata_and_Priboy",
+      "name": "Galata and Priboy",
+      "photoCount": 11
+    },
+    {
+      "slug": "Golden_sands",
+      "name": "Златни пясъци",
+      "photoCount": 11
+    },
+    {
+      "slug": "Gradina",
+      "name": "Градина",
+      "photoCount": 4
+    },
+    {
+      "slug": "IYC",
+      "name": "МДЦ",
+      "photoCount": 11
+    },
+    {
+      "slug": "Irakli_and_Emona",
+      "name": "Irakli and Emona",
+      "photoCount": 54
+    },
+    {
+      "slug": "Kaliakra",
+      "name": "Калиакра",
+      "photoCount": 29
+    },
+    {
+      "slug": "Kamchia",
+      "name": "Камчия",
+      "photoCount": 9
+    },
+    {
+      "slug": "Kamen_Bryag",
+      "name": "Kamen Bryag",
+      "photoCount": 30
+    },
+    {
+      "slug": "Karadere",
+      "name": "Кара дере",
+      "photoCount": 47
+    },
+    {
+      "slug": "Kavarna",
+      "name": "Каварна",
+      "photoCount": 12
+    },
+    {
+      "slug": "Kavatzi_and_Smokinya",
+      "name": "Kavatzi and Smokinya",
+      "photoCount": 17
+    },
+    {
+      "slug": "Kiten",
+      "name": "Китен",
+      "photoCount": 8
+    },
+    {
+      "slug": "Konstantin_and_Elena",
+      "name": "Konstantin and Elena",
+      "photoCount": 28
+    },
+    {
+      "slug": "Krapetz",
+      "name": "Крапец",
+      "photoCount": 8
+    },
+    {
+      "slug": "Lozenetz",
+      "name": "Лозенец",
+      "photoCount": 6
+    },
+    {
+      "slug": "Nesebar",
+      "name": "Несебър",
+      "photoCount": 37
+    },
+    {
+      "slug": "Obzor",
+      "name": "Обзор",
+      "photoCount": 25
+    },
+    {
+      "slug": "Pomorie",
+      "name": "Поморие",
+      "photoCount": 19
+    },
+    {
+      "slug": "Primorsko",
+      "name": "Приморско",
+      "photoCount": 12
+    },
+    {
+      "slug": "Ravda",
+      "name": "Равда",
+      "photoCount": 11
+    },
+    {
+      "slug": "Rezovo",
+      "name": "Резово",
+      "photoCount": 22
+    },
+    {
+      "slug": "Riviera",
+      "name": "Ривиера",
+      "photoCount": 7
+    },
+    {
+      "slug": "Ropotamo",
+      "name": "Ропотамо",
+      "photoCount": 11
+    },
+    {
+      "slug": "Rusalka",
+      "name": "Русалка",
+      "photoCount": 5
+    },
+    {
+      "slug": "Shabla",
+      "name": "Шабла",
+      "photoCount": 14
+    },
+    {
+      "slug": "Shkorpilovtzi",
+      "name": "Шкорпиловци",
+      "photoCount": 11
+    },
+    {
+      "slug": "Silistar",
+      "name": "Силистар",
+      "photoCount": 9
+    },
+    {
+      "slug": "Sinemorets",
+      "name": "Синеморец",
+      "photoCount": 12
+    },
+    {
+      "slug": "Sozopol",
+      "name": "Созопол",
+      "photoCount": 41
+    },
+    {
+      "slug": "Sunny_beach",
+      "name": "Sunny beach",
+      "photoCount": 29
+    },
+    {
+      "slug": "Sveti_Vlas",
+      "name": "Sveti Vlas",
+      "photoCount": 4
+    },
+    {
+      "slug": "Tulenovo",
+      "name": "Тюленово",
+      "photoCount": 15
+    },
+    {
+      "slug": "Tzarevo",
+      "name": "Царево",
+      "photoCount": 11
+    },
+    {
+      "slug": "Varna",
+      "name": "Варна",
+      "photoCount": 55
+    },
+    {
+      "slug": "Varvara",
+      "name": "Варвара",
+      "photoCount": 5
+    }
+  ],
+  "en": [
+    {
+      "slug": "Ahtopol",
+      "name": "Ahtopol",
+      "photoCount": 18
+    },
+    {
+      "slug": "Albena_and_Kranevo",
+      "name": "Albena and Kranevo",
+      "photoCount": 7
+    },
+    {
+      "slug": "Arapya",
+      "name": "Arapya",
+      "photoCount": 2
+    },
+    {
+      "slug": "Balchik",
+      "name": "Balchik",
+      "photoCount": 53
+    },
+    {
+      "slug": "Burgas",
+      "name": "Burgas",
+      "photoCount": 12
+    },
+    {
+      "slug": "Byala",
+      "name": "Byala",
+      "photoCount": 10
+    },
+    {
+      "slug": "Duni",
+      "name": "Duni",
+      "photoCount": 10
+    },
+    {
+      "slug": "Durankulak",
+      "name": "Durankulak",
+      "photoCount": 25
+    },
+    {
+      "slug": "Elenite",
+      "name": "Elenite",
+      "photoCount": 9
+    },
+    {
+      "slug": "Evksinograd",
+      "name": "Evksinograd",
+      "photoCount": 43
+    },
+    {
+      "slug": "Galata_and_Priboy",
+      "name": "Galata and Priboy",
+      "photoCount": 11
+    },
+    {
+      "slug": "Golden_sands",
+      "name": "Golden sands",
+      "photoCount": 11
+    },
+    {
+      "slug": "Gradina",
+      "name": "Gradina",
+      "photoCount": 4
+    },
+    {
+      "slug": "IYC",
+      "name": "IYC",
+      "photoCount": 11
+    },
+    {
+      "slug": "Irakli_and_Emona",
+      "name": "Irakli and Emona",
+      "photoCount": 54
+    },
+    {
+      "slug": "Kaliakra",
+      "name": "Kaliakra",
+      "photoCount": 29
+    },
+    {
+      "slug": "Kamchia",
+      "name": "Kamchia",
+      "photoCount": 9
+    },
+    {
+      "slug": "Kamen_Bryag",
+      "name": "Kamen Bryag",
+      "photoCount": 30
+    },
+    {
+      "slug": "Karadere",
+      "name": "Karadere",
+      "photoCount": 47
+    },
+    {
+      "slug": "Kavarna",
+      "name": "Kavarna",
+      "photoCount": 12
+    },
+    {
+      "slug": "Kavatzi_and_Smokinya",
+      "name": "Kavatzi and Smokinya",
+      "photoCount": 17
+    },
+    {
+      "slug": "Kiten",
+      "name": "Kiten",
+      "photoCount": 8
+    },
+    {
+      "slug": "Konstantin_and_Elena",
+      "name": "Konstantin and Elena",
+      "photoCount": 28
+    },
+    {
+      "slug": "Krapetz",
+      "name": "Krapetz",
+      "photoCount": 8
+    },
+    {
+      "slug": "Lozenetz",
+      "name": "Lozenetz",
+      "photoCount": 6
+    },
+    {
+      "slug": "Nesebar",
+      "name": "Nesebar",
+      "photoCount": 37
+    },
+    {
+      "slug": "Obzor",
+      "name": "Obzor",
+      "photoCount": 25
+    },
+    {
+      "slug": "Pomorie",
+      "name": "Pomorie",
+      "photoCount": 19
+    },
+    {
+      "slug": "Primorsko",
+      "name": "Primorsko",
+      "photoCount": 12
+    },
+    {
+      "slug": "Ravda",
+      "name": "Ravda",
+      "photoCount": 11
+    },
+    {
+      "slug": "Rezovo",
+      "name": "Rezovo",
+      "photoCount": 22
+    },
+    {
+      "slug": "Riviera",
+      "name": "Riviera",
+      "photoCount": 7
+    },
+    {
+      "slug": "Ropotamo",
+      "name": "Ropotamo",
+      "photoCount": 11
+    },
+    {
+      "slug": "Rusalka",
+      "name": "Rusalka",
+      "photoCount": 5
+    },
+    {
+      "slug": "Shabla",
+      "name": "Shabla",
+      "photoCount": 14
+    },
+    {
+      "slug": "Shkorpilovtzi",
+      "name": "Shkorpilovtzi",
+      "photoCount": 11
+    },
+    {
+      "slug": "Silistar",
+      "name": "Silistar",
+      "photoCount": 9
+    },
+    {
+      "slug": "Sinemorets",
+      "name": "Sinemorets",
+      "photoCount": 12
+    },
+    {
+      "slug": "Sozopol",
+      "name": "Sozopol",
+      "photoCount": 41
+    },
+    {
+      "slug": "Sunny_beach",
+      "name": "Sunny beach",
+      "photoCount": 29
+    },
+    {
+      "slug": "Sveti_Vlas",
+      "name": "Sveti Vlas",
+      "photoCount": 4
+    },
+    {
+      "slug": "Tulenovo",
+      "name": "Tulenovo",
+      "photoCount": 15
+    },
+    {
+      "slug": "Tzarevo",
+      "name": "Tzarevo",
+      "photoCount": 11
+    },
+    {
+      "slug": "Varna",
+      "name": "Varna",
+      "photoCount": 55
+    },
+    {
+      "slug": "Varvara",
+      "name": "Varvara",
+      "photoCount": 5
+    }
+  ]
+}
