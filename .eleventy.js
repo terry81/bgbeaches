@@ -2,7 +2,7 @@ module.exports = function(eleventyConfig) {
   // Passthrough copy for static assets
   eleventyConfig.addPassthroughCopy({
     "css": "css",
-    "albums": "albums",
+    "src/albums": "albums",
     "scripts": "scripts",
     "ads.txt": "ads.txt",
     "robots.txt": "robots.txt",
