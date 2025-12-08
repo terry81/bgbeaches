@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Build Static Site
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source
@@ -15,10 +15,4 @@ jobs:
         run: npm install
       - name: Build site
         run: npx eleventy
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
-          publish_branch: gh-pages  # Explicitly set the branch for deployment
-# NOTE: Ensure repository Settings > Actions > General > Workflow permissions is set to "Read and write permissions"
+# After build, commit and push the contents of _site/ to main so GitHub Pages can serve them.
