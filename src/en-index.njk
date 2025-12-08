@@ -1,0 +1,50 @@
+---
+layout: base.njk
+locale: en
+title: Bulgarian Beaches
+description: Discover beautiful beaches along the Bulgarian Black Sea coast. Photo gallery of 46 beach locations.
+permalink: en/index.html
+---
+
+<h1>Bulgarian Beaches - Complete Black Sea Coast Guide</h1>
+
+<h2>Welcome to Bulgaria's Black Sea</h2>
+<p align="justify">Welcome to the most comprehensive guide to Bulgarian beaches on the Black Sea. This site documents all major beach destinations along Bulgaria's 378-kilometer coastline, from Durankulak in the north to Rezovo in the south. Our extensive photo collection and detailed guides help you discover the perfect beach for your vacation.</p>
+
+<h2>About This Site</h2>
+<p align="justify">Note: During the distant 2007 Peter, my best friend, and I decided to travel around Bulgaria's Black Sea coast, take photos and make this site. This is a precious memory and archive from back then.</p>
+
+<h2>Discover Bulgarian Beaches</h2>
+<p align="justify">Bulgaria is a popular destination for summer holidays. Its coastline features thousands of beaches ranging from pristine natural coves to fully-developed resort complexes. Whether you seek vibrant nightlife, family-friendly facilities, romantic seclusion, or authentic Bulgarian coastal culture, you'll find your perfect beach here. Unfortunately, the Bulgarian beaches are ruined by the reckless business. Many of the photos here will probably remain just memories...</p>
+
+<h2>What Makes Bulgarian Beaches Special</h2>
+<p align="justify">Bulgarian Black Sea beaches offer exceptional value compared to Western Europe, with warm summer waters (22-25°C), fine golden sand, and diverse experiences. From the party atmosphere of Sunny Beach and Golden Sands to the untouched beauty of Silistar and Irakli, each destination has unique character. Prices remain affordable, locals are welcoming, and the coastal cuisine features fresh seafood and traditional Bulgarian specialties.</p>
+
+<h2>Plan Your Visit</h2>
+<p align="justify"><strong>Best Time:</strong> June-September for swimming; July-August busiest and warmest<br />
+<strong>Peak Season:</strong> Mid-July to mid-August (book early, expect crowds, higher prices)<br />
+<strong>Shoulder Season:</strong> June and September (excellent weather, fewer tourists, better value)<br />
+<strong>Budget:</strong> 50-100 BGN/day budget travel; 100-200 BGN/day mid-range comfort<br />
+<strong>Getting There:</strong> Airports in Burgas (BOJ) and Varna (VAR) serve international flights<br />
+<strong>Currency:</strong> Bulgarian Lev (BGN), approximately 2 BGN = 1 EUR</p>
+
+<h2>Browse All Beach Destinations</h2>
+<p align="justify">Below you'll find our complete collection of Bulgarian beach destinations, organized from north to south. Each location includes detailed descriptions, practical information, and extensive photo galleries to help you plan your perfect Black Sea vacation.</p>
+
+<hr />
+
+<ul class="gallery">
+{% for location in locationsWithThumbs.en %}
+  <li>
+    <a href="/en/{{ location.slug }}/">
+      <img src="/albums/{{ location.slug }}/{{ location.thumbnail }}"
+           alt="{{ location.name }}"
+           loading="lazy"
+           onerror="this.src='/albums/About_us/us.JPG_TN';" />
+      <br />
+      {{ location.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+

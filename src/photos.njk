@@ -1,0 +1,48 @@
+---
+pagination:
+  data: photoData
+  size: 1
+  alias: pageData
+permalink: "{{ pageData.locale }}/{{ pageData.location }}/{{ pageData.photo.slug }}.html"
+---
+
+<div class="breadcrumbs">
+  {% for crumb in pageData.breadcrumbs %}
+    {% if not loop.first %}&raquo;{% endif %}
+    {% if crumb.url %}
+      <a href="{{ crumb.url }}">{{ crumb.title }}</a>
+    {% else %}
+      <span>{{ crumb.title }}</span>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h1>{{ pageData.title }}</h1>
+
+<img src="/albums/{{ pageData.location }}/{{ pageData.photo.filename }}"
+     alt="{{ pageData.photo.alt or pageData.title }}"
+     class="images"
+     loading="lazy" />
+
+<div class="photo-nav">
+  {% if pageData.photo.previous %}
+  <a href="{{ pageData.photo.previous.url }}" class="nav-prev">← {% if pageData.locale == 'bg' %}Предишна{% else %}Previous{% endif %}</a>
+  {% else %}
+  <span></span>
+  {% endif %}
+
+  <a href="/{{ pageData.locale }}/{{ pageData.location }}/" class="nav-back">← {% if pageData.locale == 'bg' %}Назад към галерията{% else %}Back to Gallery{% endif %}</a>
+
+  {% if pageData.photo.next %}
+  <a href="{{ pageData.photo.next.url }}" class="nav-next">{% if pageData.locale == 'bg' %}Следваща{% else %}Next{% endif %} →</a>
+  {% endif %}
+</div>
+
+{% if pageData.photo.sections %}
+{% for section in pageData.photo.sections %}
+<h2>{{ section.heading }}</h2>
+<p align="justify">{{ section.content }}</p>
+
+{% endfor %}
+{% endif %}
+
