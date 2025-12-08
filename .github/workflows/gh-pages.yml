@@ -1,20 +1,22 @@
 name: Deploy to GitHub Pages
-          publish_dir: _site
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-        with:
-        uses: peaceiris/actions-gh-pages@v4
-      - name: Deploy
-          # For static HTML, no build step is required
-          # Add your build steps here if needed
-        run: |
-      - name: Build site
-      - uses: actions/checkout@v4
-    steps:
-    runs-on: ubuntu-latest
-  deploy:
-jobs:
-      - main
-    branches:
-  push:
-on:
 
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm install
+      - name: Build site
+        run: npx eleventy
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
