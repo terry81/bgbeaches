@@ -6,7 +6,6 @@ module.exports = function(eleventyConfig) {
     "scripts": "scripts",
     "ads.txt": "ads.txt",
     "robots.txt": "robots.txt",
-    "sitemap.xml": "sitemap.xml",
     "CNAME": "CNAME"
   });
 
