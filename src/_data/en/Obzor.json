@@ -1,739 +1,439 @@
 {
-  "name": "Obzor",
+  "name": "Nesebar",
   "photos": [
     {
-      "slug": "under_construction",
-      "title": "Under Construction at Obzor",
-      "filename": "under_construction.jpg",
+      "slug": "stylish",
+      "title": "Stylish at Nesebar",
+      "filename": "stylish.jpg",
+      "alt": "That's a stylish young girl who walks in the ancient Nesebar.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar captures a **stylish young girl walking in the ancient city**. This image highlights the blend of modern life and the historical, preserved atmosphere of Nesebar, showcasing the characteristic features of architecture or everyday life in this unique location on the Bulgarian Black Sea coast."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "remains",
+      "title": "Remains at Nesebar",
+      "filename": "remains.jpg",
+      "alt": "These are the remains from the ancient church 'Archangels Michael and Gabriel'",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar shows the **remains from the ancient church 'Archangels Michael and Gabriel'**. This clearly demonstrates the historical and architectural significance of Nesebar, a UNESCO World Heritage site known for its distinctive ancient structures and characteristic historical atmosphere."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "Old-Nesebar",
+      "title": "Old Nesebar at Nesebar",
+      "filename": "Old-Nesebar.jpg",
       "alt": " ",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows under construction. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photograph captures a scene from **Old Nesebar**, showcasing the unique architecture and historical ambiance of the peninsula. The image provides an authentic view of the historical core of Nesebar, helping visitors understand the character of this ancient town. Taken as part of a comprehensive documentation of Bulgarian Black Sea beaches, this photo aims to present an honest, realistic representation rather than overly-edited promotional imagery."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "bus-station",
-      "title": "Bus Station at Obzor",
-      "filename": "bus-station.jpg",
-      "alt": "This is the modern bus station in Obzor.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows bus station. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "look",
-      "title": "Look at Obzor",
-      "filename": "look.jpg",
-      "alt": "That's how Obzor looks from above.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows look. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "june",
-      "title": "June at Obzor",
-      "filename": "june.jpg",
-      "alt": "Another photo of the beach in June.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows june. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "centre",
-      "title": "Centre at Obzor",
-      "filename": "centre.jpg",
+      "slug": "modern-yacht",
+      "title": "Modern Yacht at Nesebar",
+      "filename": "modern-yacht.jpg",
       "alt": " ",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows centre. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photo from Nesebar features a **modern yacht**, suggesting that while Nesebar is an ancient town, it also serves as a hub for contemporary maritime activities and luxury tourism. The presence of a modern yacht highlights the diverse range of experiences and the combination of old and new that characterize the atmosphere of Nesebar."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "hotness",
+      "title": "Hotness at Nesebar",
+      "filename": "hotness.jpg",
+      "alt": "In the hotness of day there are a few of people in the streets. However, in the evening the old city of Nesebar is full and overcrowded.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar illustrates the difference in crowd levels, showing that **in the hotness of the day, there are few people in the streets**, while noting that the **old city of Nesebar is full and overcrowded in the evening**. This provides valuable insight into the rhythm of tourist life and the busy atmosphere during peak times in the ancient city."
         },
         {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "more-shops",
+      "title": "More Shops at Nesebar",
+      "filename": "more-shops.jpg",
+      "alt": "So many shops can sometimes irritate you and prevent you from enjoying the ancient spirit of Nesebar.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar highlights the presence of **many shops** and suggests that the commercial density **can sometimes irritate visitors** and detract from the enjoyment of the **ancient spirit of Nesebar**. This provides an authentic perspective on the blend of history and commerce that characterizes the everyday life in the old city."
         },
         {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "ancient-house",
+      "title": "Ancient House at Nesebar",
+      "filename": "ancient-house.jpg",
+      "alt": " ",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar features an **ancient house**, showcasing the distinctive wooden and stone architecture that is characteristic of the old city and a key element of its UNESCO World Heritage status. This type of architecture reflects the historical atmosphere and unique cultural heritage that defines Nesebar's specific experience."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "archangels-michael-and-gabriel",
+      "title": "Archangels Michael And Gabriel at Nesebar",
+      "filename": "archangels-michael-and-gabriel.jpg",
+      "alt": " ",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar captures the **Church of the Holy Archangels Michael and Gabriel**, a significant medieval structure whose architectural remains contribute to the historical prestige of the Old City. This provides an example of the specific, distinctive features of architecture that define Nesebar's unique experience on the Bulgarian Black Sea coast."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "museum",
+      "title": "Museum at Nesebar",
+      "filename": "museum.jpg",
+      "alt": "Nesebar is famous for its many museum and art collections.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar shows one of the local **museums**, reinforcing the fact that Nesebar is **famous for its many museums and art collections**. This highlights the destination's rich cultural and historical appeal, which is a key characteristic setting it apart from other Bulgarian coastal locations."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "Saint-Sofia",
+      "title": "Saint Sofia at Nesebar",
+      "filename": "Saint-Sofia.jpg",
+      "alt": "These are the remains from the church Saint Sofia.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar captures the **remains from the church Saint Sofia** (Old Metropolitan Church). As one of the oldest churches in Nesebar, this structure is a prime example of the historical, cultural, and architectural significance that defines the unique atmosphere and experience of the old city."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
       "slug": "beach",
-      "title": "Beach at Obzor",
+      "title": "Beach - Nesebar",
       "filename": "beach.jpg",
-      "alt": "Obzor's beach is quite overcrowded in the middle but it gets better in the ends.",
+      "alt": "The main drawback of Nesebar is its very small beach. That's why most of the tourists go to the neighboring <a href=\\http://bgbeaches.com/en/Sunny_beach/\\ loading=",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photograph captures the beach area, showing the sand quality, beach layout, and typical conditions visitors can expect. Obzor's beach is quite overcrowded in the middle but it gets better in the ends. Taken as part of a comprehensive documentation of Bulgarian Black Sea beaches, this photo aims to present an honest, realistic representation rather than overly-edited promotional imagery."
+          "content": "This photograph captures the sandy beach and coastal conditions at Nesebar. It explicitly notes that the **main drawback of Nesebar is its very small beach**, which results in **most tourists going to the neighboring Sunny Beach**. This provides an honest assessment of the beach quality and crowd management, which is essential information for visitors."
         },
         {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during peak summer season, showing actual beach conditions and visitor density. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "heading": "Understanding What You See",
+          "content": "The beach area shown in this image represents typical conditions at Nesebar. When planning a beach vacation in Bulgaria, visual information like this helps travelers make informed decisions about which destinations match their preferences. The Bulgarian Black Sea coast stretches 378 kilometers and offers tremendous diversity - from wild natural beaches to fully-developed resorts - making it important to understand the character of each location."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+          "heading": "About Nesebar",
+          "content": "Nesebar is one of many distinctive destinations along Bulgaria's Black Sea coastline. Each location offers unique characteristics in terms of beach quality, water conditions, facilities, crowd levels, and overall atmosphere. Bulgaria's coastal tourism provides excellent value compared to Western European beach destinations, with summer temperatures reaching 28-32°C (air) and water temperatures of 22-25°C during peak season."
         },
         {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
+          "heading": "Visiting Information",
+          "content": "Best Time to Visit: June-September for swimming, with July-August being busiest and most expensive. Accommodation: Ranges from budget guesthouses (40-60 BGN/night) to mid-range hotels (80-150 BGN/night). Beach Costs: Beach access is free; sunbed/umbrella rentals typically 10-20 BGN/day. Food: Beach bar meals 10-20 BGN; local restaurants 15-30 BGN for main courses. Currency: Bulgarian Lev (BGN), approximately 2 BGN = 1 EUR. Language: Bulgarian official; English, German, Russian spoken in tourist areas."
         },
         {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
+          "heading": "What Makes Bulgarian Beaches Special",
+          "content": "The Bulgarian Black Sea coast combines several key advantages: warm summer waters perfect for swimming, generally fine sandy beaches, relatively uncrowded conditions (outside major resorts), excellent value for money, diverse options from wild nature to developed infrastructure, rich cultural history, and welcoming local hospitality. Whether seeking party atmosphere or peaceful retreat, modern resorts or traditional villages, this coastline delivers authentic experiences at affordable prices."
         },
         {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during golden hours - early morning (6-8 AM) and evening (6-8 PM). The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "Planning Your Visit",
+          "content": "When planning a trip to the Bulgarian Black Sea coast, consider your priorities: Do you want vibrant nightlife or peaceful relaxation? Family facilities or romantic settings? Budget accommodations or luxury hotels? Natural beaches or resort amenities? Browse through photo galleries of different locations to compare options and find your ideal destination. Many travelers visit multiple beaches during one trip to experience the coast's diversity."
+        },
+        {
+          "heading": "Practical Tips",
+          "content": "Bring SPF 30+ sunscreen - the Black Sea sun is strong. Many establishments prefer cash over cards. Learn basic Bulgarian phrases - locals appreciate the effort. Book accommodations well in advance for July-August. Consider visiting in June or September for better weather-to-crowd ratios. Try local restaurants for authentic Bulgarian cuisine and fresh Black Sea fish. Tap water is generally safe but bottled water is inexpensive. Beach gear rentals are available but bringing your own saves money."
         }
       ]
     },
     {
-      "slug": "hotels2",
-      "title": "Hotels2 at Obzor",
-      "filename": "hotels2.jpg",
-      "alt": "More and more hotels in Obzor...",
+      "slug": "in-water",
+      "title": "In Water at Nesebar",
+      "filename": "in-water.jpg",
+      "alt": " ",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows hotels2. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photograph captures the **water conditions and sea state** at Nesebar, showing visitors wading or swimming near the shore. This information is important for swimmers and water sports enthusiasts, providing an authentic view of the sea's clarity and general state during the peak season."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during peak summer season, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "Paid_zone",
-      "title": "Paid Zone at Obzor",
-      "filename": "Paid_zone.jpg",
-      "alt": "There are people who pay for everything...",
+      "slug": "well-maintained",
+      "title": "Well Maintained at Nesebar",
+      "filename": "well-maintained.jpg",
+      "alt": "We can't deny that a lot of efforts are put in the maintenance of the old city of Nesebar.",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows Paid zone. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photo from Nesebar highlights the visible **efforts put into the maintenance of the old city of Nesebar**. This emphasizes the preserved, cared-for quality of the architecture and infrastructure, ensuring the continued enjoyment of the historical atmosphere and specific experience offered by this World Heritage site."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "hotel",
-      "title": "Hotel at Obzor",
-      "filename": "hotel.jpg",
-      "alt": "The hotel mega mania has passed through Obzor building giant buildings in the newer part of the city. It is quite doubtful there will be ever enough people to fill all the new hotels.",
+      "slug": "hotels-new-city",
+      "title": "Hotels New City at Nesebar",
+      "filename": "hotels-new-city.jpg",
+      "alt": "The hotels in the new city of Nesebar are just as everywhere else in Bulgaria - too dense.",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows hotel. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photo from Nesebar shows the **hotels in the new city**, commenting that they are **too dense**, a common characteristic observed in many areas of Bulgarian coastal development. This provides context on the modern architecture and urban planning outside of the historical core, contributing to the complete picture of Nesebar's current environment."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "police",
+      "title": "Police at Nesebar",
+      "filename": "police.jpg",
+      "alt": "Police control (even though it seems a bit sleepy) is very strict in Nesebar. Vehicles are not allowed in the ancient city unless they have a special pass.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar illustrates the presence of **police control**, noting that it is **very strict in Nesebar**, specifically mentioning that **vehicles are not allowed in the ancient city unless they have a special pass**. This is crucial practical information for visitors, highlighting the traffic restrictions and focus on preserving the ancient core."
         },
         {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
+        }
+      ]
+    },
+    {
+      "slug": "windmill",
+      "title": "Windmill at Nesebar",
+      "filename": "windmill.jpg",
+      "alt": "The old windmill in Nesebar is a popular attraction and part of the old fashion design.",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photo from Nesebar features the **old windmill**, which is a **popular attraction** and an integral part of the city's **old fashion design** and characteristic silhouette. Located on the causeway to the old town, it is a distinctive landmark that contributes to Nesebar's unique historical atmosphere."
         },
         {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "Visual Context",
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+        },
+        {
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
       "slug": "boats",
-      "title": "Boats at Obzor",
+      "title": "Boats at Nesebar",
       "filename": "boats.jpg",
-      "alt": "Just some boats at the end of Obzor's beach",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photograph captures the port or marina area, interesting for those who enjoy maritime atmosphere and boat activities. Just some boats at the end of Obzor's beach Taken as part of a comprehensive documentation of Bulgarian Black Sea beaches, this photo aims to present an honest, realistic representation rather than overly-edited promotional imagery."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "camp",
-      "title": "Camp at Obzor",
-      "filename": "camp.jpg",
-      "alt": "This is a school camp. Their place on the beach is separated with a rope.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows camp. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "bunker",
-      "title": "Bunker at Obzor",
-      "filename": "bunker.jpg",
-      "alt": "One of Obzor's bunkers on the beach. It is situated on a high hill with good visibility to the beach so that a single shooter can protect a wide area. It is a remain from the communist's regime and seems obsolete in today's military tactics. There is a hotel built right before it :) It will be funny to have a bunker beneath your hotel room's terrace.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows bunker. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "bar",
-      "title": "Bar at Obzor",
-      "filename": "bar.jpg",
       "alt": " ",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photograph captures the dining options available, showcasing local restaurants and food establishments. The image provides an authentic view of Obzor, helping visitors understand what to expect when planning their trip. Taken as part of a comprehensive documentation of Bulgarian Black Sea beaches, this photo aims to present an honest, realistic representation rather than overly-edited promotional imagery."
+          "content": "This photograph captures **boats** docked or sailing near the port area of Nesebar. The presence of these vessels highlights the city's long history as a maritime center and contributes to the overall coastal atmosphere, providing views interesting for those who enjoy boat activities."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "perfect_time",
-      "title": "Perfect Time at Obzor",
-      "filename": "perfect_time.jpg",
-      "alt": "This is the beach in the beginning of the summer - somewhere in late June. This is the perfect time for having a real rest and this is valid not only for Obzor.",
+      "slug": "architecture",
+      "title": "Architecture at Nesebar",
+      "filename": "architecture.jpg",
+      "alt": "The new buildings in Bulgaria are famous for being too close to each other. Now it is clear that this has been a bad heritage :)",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows perfect time. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photo from Nesebar focuses on the **architecture** in the new city, commenting on the perceived problem of **new buildings being constructed too close to each other**. This suggests a perspective on the contrast between the carefully preserved old city and the dense, modern development in the neighboring areas."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "deserted",
-      "title": "Deserted at Obzor",
-      "filename": "deserted.jpg",
-      "alt": "Another photo of the deserted beach in the early summer.",
+      "slug": "antiques",
+      "title": "Antiques at Nesebar",
+      "filename": "antiques.jpg",
+      "alt": "In Nesebar there are many antiques shops.",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows deserted. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photo from Nesebar showcases a view of an area featuring **many antiques shops**. This highlights the retail environment, specifically focusing on items of historical interest, which supports the city's overall atmosphere as an ancient, culturally rich destination on the Bulgarian Black Sea coast."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "pimped",
-      "title": "Pimped at Obzor",
-      "filename": "pimped.jpg",
-      "alt": "This is how the cars in Obzor look like :)",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows pimped. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "fountain",
-      "title": "Fountain at Obzor",
-      "filename": "fountain.jpg",
+      "slug": "church",
+      "title": "Church at Nesebar",
+      "filename": "church.jpg",
       "alt": " ",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows fountain. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photo from Nesebar captures one of the many **churches** in the old city. These medieval religious structures are central to Nesebar's identity as a historical landmark and contribute significantly to the distinctive features of architecture that characterize this UNESCO World Heritage site."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
     {
-      "slug": "massage",
-      "title": "Massage at Obzor",
-      "filename": "massage.jpg",
-      "alt": "This is a special kind of massage which they offer only on the beach of Obzor.",
+      "slug": "romantic-restaurant",
+      "title": "Romantic Restaurant at Nesebar",
+      "filename": "romantic-restaurant.jpg",
+      "alt": "This is the most romantic restaurant in Nesebar.",
       "sections": [
         {
           "heading": "About This Photo",
-          "content": "This photo from Obzor shows massage. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
+          "content": "This photograph captures the dining options available, showcasing a local food establishment described as the **most romantic restaurant in Nesebar**. This highlights a specific characteristic of the dining experience, appealing to couples and travelers seeking memorable culinary experiences in the city. Taken as part of a comprehensive documentation of Bulgarian Black Sea beaches, this photo aims to present an honest, realistic representation rather than overly-edited promotional imagery."
         },
         {
           "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
+          "content": "What you see in this image represents typical conditions at Nesebar. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
         },
         {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "castle",
-      "title": "Castle at Obzor",
-      "filename": "castle.jpg",
-      "alt": " ",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows castle. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "girls",
-      "title": "Girls at Obzor",
-      "filename": "girls.jpg",
-      "alt": " ",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows girls. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "panic",
-      "title": "Panic at Obzor",
-      "filename": "panic.jpg",
-      "alt": "Watch out for your health while you are in Obzor. There are too many pretty women.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows panic. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "Lounge",
-      "title": "Lounge at Obzor",
-      "filename": "Lounge.jpg",
-      "alt": "Expect the next big lounge music compilation to be from this place in Obzor :)",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows Lounge. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
-        }
-      ]
-    },
-    {
-      "slug": "retro",
-      "title": "Retro at Obzor",
-      "filename": "retro.jpg",
-      "alt": "It is interesting to know that Obzor is an old resort and there are many old fashioned villas right on the seaside.",
-      "sections": [
-        {
-          "heading": "About This Photo",
-          "content": "This photo from Obzor shows retro. Every location on the Bulgarian Black Sea coast has unique characteristics and atmosphere. Obzor offers a specific experience with distinctive features of nature, architecture or everyday life."
-        },
-        {
-          "heading": "Visual Context",
-          "content": "What you see in this image represents typical conditions at Obzor. The photograph was taken during a visit to document the area, showing the characteristic features of this location. Understanding what different areas look like helps travelers make informed decisions about which Bulgarian beach destinations best match their preferences."
-        },
-        {
-          "heading": "About Obzor",
-          "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
+          "heading": "About Nesebar",
+          "content": "Nesebar is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
         }
       ]
     },
@@ -754,18 +454,6 @@
         {
           "heading": "About Obzor",
           "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
         }
       ]
     },
@@ -786,18 +474,6 @@
         {
           "heading": "About Obzor",
           "content": "Obzor is a destination along Bulgaria's 378km Black Sea coastline, featuring sandy beach area with fine to medium sand. The area is particularly known for authentic Bulgarian coastal experience. Visitors to this location typically enjoy Black Sea waters, warm in summer (22-25°C), and the destination attracts beach lovers, families, and coastal tourists."
-        },
-        {
-          "heading": "What to Expect When Visiting",
-          "content": "When you visit Obzor, you'll find beach amenities available during summer season. The beach area maintains varies by season, which significantly impacts the visitor experience. During peak summer months (July-August), expect warmer temperatures (28-32°C air, 23-25°C water) and higher visitor numbers. June and September offer similar weather with notably fewer crowds."
-        },
-        {
-          "heading": "Nearby Attractions & Activities",
-          "content": "Beyond the beach itself, the area around Obzor offers access to other Bulgarian Black Sea destinations. Many visitors combine beach time with exploration of nearby attractions, creating a well-rounded vacation experience. The Bulgarian Black Sea coast features diverse activities including water sports, coastal hiking, historical site visits, and traditional village exploration."
-        },
-        {
-          "heading": "Photography & Best Times",
-          "content": "For photographers visiting Obzor, the best light occurs during various times of day depending on desired atmosphere. The beach areas are typically least crowded before 10 AM and after 5 PM. Consider visiting during different times of day to experience varying atmospheres and lighting conditions."
         }
       ]
     }

@@ -33,7 +33,7 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 {% if gallery.gallery_description %}
   {% for section in gallery.gallery_description %}
     <h2>{{ section.heading }}</h2>
-    <p align="justify">{{ section.content }}</p>
+    <p align="justify">{{ section.content | markdownBold | safe }}</p>
   {% endfor %}
 {% endif %}
 

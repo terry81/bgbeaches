@@ -15,6 +15,13 @@ module.exports = function(eleventyConfig) {
     return str;
   });
 
+  // Filter to convert **text** to <strong>text</strong>
+  eleventyConfig.addNunjucksFilter("markdownBold", function(str) {
+    if (!str) return str;
+    // Replace **text** with <strong>text</strong>
+    return str.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  });
+
   return {
     dir: {
       input: ".",
