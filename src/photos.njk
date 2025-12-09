@@ -28,7 +28,7 @@ permalink: "{{ pageData.locale }}/{{ pageData.location }}/{{ pageData.photo.slug
 {% if pageData.photo.sections %}
 {% for section in pageData.photo.sections %}
 <h2>{{ section.heading }}</h2>
-<p align="justify">{{ section.content }}</p>
+<p align="justify">{{ section.content | markdownBold | safe }}</p>
 
 {% endfor %}
 {% endif %}
