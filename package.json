@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prebuild": "node scripts/ensure-ads-txt.js",
     "build": "eleventy",
+    "postbuild": "node scripts/ensure-ads-txt.js",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
     "clean": "rm -rf _site",
-    "build:production": "NODE_ENV=production eleventy"
+    "build:production": "NODE_ENV=production eleventy",
+    "ensure-ads": "node scripts/ensure-ads-txt.js"
   },
   "repository": {
     "type": "git",
