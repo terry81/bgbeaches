@@ -1,0 +1,21 @@
+{
+  "name": "About Us",
+  "photos": [
+    {
+      "slug": "us",
+      "title": "About Us",
+      "filename": "us.jpg",
+      "alt": "",
+      "sections": [
+        {
+          "heading": "About us",
+          "content": "In the distant 2007 or even 2006, who can remember, two friends decided to tour the Bulgarian beaches and capture their beauty. That's how it all started."
+        },
+        {
+          "heading": "Who are we?",
+          "content": "Pepi was the photographer, and Toli was the driver and the one who made the website. Over the years, the website has undergone many transformations. The whole idea, traveling, and the website have always been for pleasure."
+        }
+      ]
+    }
+  ]
+}

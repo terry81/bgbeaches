@@ -224,6 +224,16 @@
       "slug": "Varvara",
       "name": "Варвара",
       "photoCount": 5
+    },
+    {
+      "slug": "Arkutino",
+      "name": "Аркутино",
+      "photoCount": 8
+    },
+    {
+      "slug": "About_us",
+      "name": "За нас",
+      "photoCount": 1
     }
   ],
   "en": [
@@ -451,6 +461,16 @@
       "slug": "Varvara",
       "name": "Varvara",
       "photoCount": 5
+    },
+    {
+      "slug": "Arkutino",
+      "name": "Arkutino",
+      "photoCount": 8
+    },
+    {
+      "slug": "About_us",
+      "name": "About Us",
+      "photoCount": 1
     }
   ]
 }

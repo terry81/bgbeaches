@@ -352,6 +352,26 @@
           "content": "For capturing the bustling atmosphere, the evening is best. For architectural shots of the pier and calmer water scenes, **early morning (before 10 AM)** is recommended."
         }
       ]
+    },
+    {
+      "slug": "bridge",
+      "title": "Bridge at Burgas",
+      "filename": "bridge.jpg",
+      "alt": "",
+      "sections": [
+        {
+          "heading": "About This Photo",
+          "content": "This photograph captures Bridge at Burgas. It shows the characteristic scenery of Burgas, helping visitors understand the local beach, amenities, and atmosphere."
+        },
+        {
+          "heading": "Visual Context",
+          "content": "The picture reflects typical conditions at Burgas. Consider visiting at different times of day to experience varied light and crowd levels."
+        },
+        {
+          "heading": "About Burgas",
+          "content": "Burgas is a beach destination on the Bulgarian Black Sea coast. Visitors come for the coastal landscape, local culture, and seaside activities."
+        }
+      ]
     }
   ],
   "gallery_description": [
