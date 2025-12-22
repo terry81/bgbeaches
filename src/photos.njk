@@ -25,24 +25,12 @@ permalink: "{{ pageData.locale }}/{{ pageData.location }}/{{ pageData.photo.slug
   {% endif %}
 </div>
 
-{% if pageData.photo.sections %}
-{% for section in pageData.photo.sections %}
-<h2>{{ section.heading }}</h2>
-<p align="justify">{{ section.content | markdownBold | safe }}</p>
-
-{% endfor %}
-{% endif %}
-
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin: 30px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <p style="color: white; font-size: 1.1em; margin: 0 0 15px 0; line-height: 1.6;">
     {% if pageData.locale == 'bg' %}
-      📸 <strong>Харесват ли ви снимките?</strong> ✨<br>
-      Научете се да снимате и вие така професионално! 🎓<br>
-      <span style="font-size: 0.95em;">Открийте тайните на перфектната фотография</span>
+      📸 <strong>Харесват ли ви снимките?</strong> ✨Научете се да снимате и вие така професионално! 🎓<br>
     {% else %}
-      📸 <strong>Do you like these photos?</strong> ✨<br>
-      Learn to take photos like this professionally! 🎓<br>
-      <span style="font-size: 0.95em;">Discover the secrets of perfect photography</span>
+      📸 <strong>Do you like these photos?</strong> ✨Learn to take photos like this professionally! 🎓<br>
     {% endif %}
   </p>
   <a href="https://greatphotoart.com" target="_blank" rel="noopener" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.2)';">
@@ -53,4 +41,14 @@ permalink: "{{ pageData.locale }}/{{ pageData.location }}/{{ pageData.photo.slug
     {% endif %}
   </a>
 </div>
+
+{% if pageData.photo.sections %}
+{% for section in pageData.photo.sections %}
+<h2>{{ section.heading }}</h2>
+<p align="justify">{{ section.content | markdownBold | safe }}</p>
+
+{% endfor %}
+{% endif %}
+
+
 
