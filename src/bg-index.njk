@@ -20,24 +20,6 @@ permalink: bg/index.html
 <hr />
 
 <ul class="gallery">
-  <li>
-    <a href="/bg/Arkutino/">
-      <img src="/albums/Arkutino/arkutino_01.jpg_TN"
-           alt="Аркутино"
-           loading="lazy"
-           onerror="this.src='/albums/About_us/us.JPG_TN';" />
-      <br />Аркутино
-    </a>
-  </li>
-  <li>
-    <a href="/bg/About_us/">
-      <img src="/albums/About_us/us.JPG_TN"
-           alt="За нас"
-           loading="lazy"
-           onerror="this.src='/albums/About_us/us.JPG_TN';" />
-      <br />За нас
-    </a>
-  </li>
 {% for location in locationsWithThumbs.bg %}
   <li>
     <a href="/bg/{{ location.slug }}/">
