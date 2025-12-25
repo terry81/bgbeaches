@@ -33,24 +33,6 @@ permalink: en/index.html
 <hr />
 
 <ul class="gallery">
-  <li>
-    <a href="/en/Arkutino/">
-      <img src="/albums/Arkutino/arkutino_01.jpg_TN"
-           alt="Arkutino"
-           loading="lazy"
-           onerror="this.src='/albums/About_us/us.JPG_TN';" />
-      <br />Arkutino
-    </a>
-  </li>
-  <li>
-    <a href="/en/About_us/">
-      <img src="/albums/About_us/us.JPG_TN"
-           alt="About Us"
-           loading="lazy"
-           onerror="this.src='/albums/About_us/us.JPG_TN';" />
-      <br />About Us
-    </a>
-  </li>
 {% for location in locationsWithThumbs.en %}
   <li>
     <a href="/en/{{ location.slug }}/">
