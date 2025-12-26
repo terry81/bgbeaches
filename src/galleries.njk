@@ -8,11 +8,10 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 
 <h2>{% if gallery.locale == 'bg' %}Фотогалерия{% else %}Photo Gallery{% endif %}</h2>
 
-
 <ul class="gallery">
 {% for photo in gallery.photos %}
   <li>
-    <a href="/{{ gallery.locale }}/{{ gallery.location }}/{{ photo.slug }}.html">
+    <a href="#" data-photo-index="{{ loop.index0 }}" class="gallery-thumbnail">
       {% set thumbnailName = photo.filename | replace('.jpg', '.jpg_TN') | replace('.JPG', '.JPG_TN') | replace('.png', '.png_TN') %}
       <img src="/albums/{{ gallery.location }}/{{ thumbnailName }}"
            alt="{{ photo.title }}"
@@ -25,6 +24,265 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 </ul>
 
 <div style="clear:both;"></div>
+
+<!-- Lightbox Modal -->
+<div id="lightbox-modal" class="lightbox-modal">
+  <div class="lightbox-content">
+    <button class="lightbox-close">&times;</button>
+    <button class="lightbox-prev">&#10094;</button>
+    <button class="lightbox-next">&#10095;</button>
+
+    <div class="lightbox-image-container">
+      <img id="lightbox-image" src="" alt="" />
+    </div>
+
+    <div class="lightbox-description">
+      <h3 id="lightbox-title"></h3>
+      <div id="lightbox-text"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Photo data
+const galleryPhotos = [
+{% for photo in gallery.photos %}
+  {
+    filename: "{{ photo.filename }}",
+    title: {{ photo.title | dump | safe }},
+    alt: {{ photo.alt | dump | safe }},
+    description: {{ photo.sections[0].content | dump | safe }}
+  }{{ "," if not loop.last }}
+{% endfor %}
+];
+
+const galleryLocation = "{{ gallery.location }}";
+const lightboxModal = document.getElementById('lightbox-modal');
+const lightboxImage = document.getElementById('lightbox-image');
+const lightboxTitle = document.getElementById('lightbox-title');
+const lightboxText = document.getElementById('lightbox-text');
+let currentPhotoIndex = 0;
+
+// Open lightbox
+document.querySelectorAll('.gallery-thumbnail').forEach(thumbnail => {
+  thumbnail.addEventListener('click', (e) => {
+    e.preventDefault();
+    currentPhotoIndex = parseInt(e.currentTarget.dataset.photoIndex);
+    showPhoto(currentPhotoIndex);
+    lightboxModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  });
+});
+
+// Close lightbox
+document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+lightboxModal.addEventListener('click', (e) => {
+  if (e.target === lightboxModal) {
+    closeLightbox();
+  }
+});
+
+function closeLightbox() {
+  lightboxModal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Navigation
+document.querySelector('.lightbox-prev').addEventListener('click', (e) => {
+  e.stopPropagation();
+  currentPhotoIndex = (currentPhotoIndex - 1 + galleryPhotos.length) % galleryPhotos.length;
+  showPhoto(currentPhotoIndex);
+});
+
+document.querySelector('.lightbox-next').addEventListener('click', (e) => {
+  e.stopPropagation();
+  currentPhotoIndex = (currentPhotoIndex + 1) % galleryPhotos.length;
+  showPhoto(currentPhotoIndex);
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+  if (lightboxModal.style.display === 'flex') {
+    if (e.key === 'Escape') {
+      closeLightbox();
+    } else if (e.key === 'ArrowLeft') {
+      document.querySelector('.lightbox-prev').click();
+    } else if (e.key === 'ArrowRight') {
+      document.querySelector('.lightbox-next').click();
+    }
+  }
+});
+
+function showPhoto(index) {
+  const photo = galleryPhotos[index];
+  lightboxImage.src = `/albums/${galleryLocation}/${photo.filename}`;
+  lightboxImage.alt = photo.alt || photo.title;
+  lightboxTitle.textContent = photo.title;
+  lightboxText.innerHTML = `<p>${photo.description}</p>`;
+}
+</script>
+
+<style>
+.lightbox-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.95);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 1200px;
+  width: 90%;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-prev,
+.lightbox-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10001;
+  transition: background 0.3s;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-prev {
+  left: 20px;
+}
+
+.lightbox-next {
+  right: 20px;
+}
+
+.lightbox-image-container {
+  flex: 0 0 auto;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 60vh;
+  overflow: hidden;
+}
+
+.lightbox-image-container img {
+  max-width: 100%;
+  max-height: 60vh;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.lightbox-description {
+  flex: 1 1 auto;
+  padding: 20px 30px;
+  background: #fff;
+  overflow-y: auto;
+  max-height: 30vh;
+}
+
+.lightbox-description h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.lightbox-description p {
+  color: #333;
+  line-height: 1.6;
+  text-align: justify;
+  margin: 0;
+}
+
+.gallery-thumbnail {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .lightbox-content {
+    width: 95%;
+    max-height: 95vh;
+  }
+
+  .lightbox-image-container {
+    max-height: 50vh;
+  }
+
+  .lightbox-image-container img {
+    max-height: 50vh;
+  }
+
+  .lightbox-description {
+    max-height: 40vh;
+    padding: 15px 20px;
+  }
+
+  .lightbox-prev,
+  .lightbox-next {
+    padding: 8px 12px;
+    font-size: 24px;
+  }
+
+  .lightbox-close {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    top: 5px;
+    right: 10px;
+  }
+}
+</style>
 
 {% if gallery.gallery_description %}
 <hr />
