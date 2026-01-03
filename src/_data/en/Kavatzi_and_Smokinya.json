@@ -188,5 +188,27 @@
         }
       ]
     }
+  ],
+  "gallery_description": [
+    {
+      "heading": "About Kavatzi and Smokinya",
+      "content": "Kavatzi and Smokinya are two small neighboring beach areas located north of Sozopol on Bulgaria's southern Black Sea coast. These modest destinations represent the quieter, less commercialized side of Bulgaria's beach tourism, appealing primarily to Bulgarian visitors and those seeking alternatives to crowded resort complexes. The beaches are relatively undeveloped compared to major tourist centers, offering basic facilities in natural settings."
+    },
+    {
+      "heading": "Beach Characteristics",
+      "content": "The beaches at Kavatzi and Smokinya feature fine to medium golden sand with natural dune formations and vegetation. Beach width varies but generally provides adequate space even during busier summer weekends. Facilities are minimal - some basic beach bars, limited sunbed rentals, and simple camping areas. The lack of extensive commercialization preserves a more authentic, rustic atmosphere that appeals to visitors preferring nature over nightlife."
+    },
+    {
+      "heading": "Camping and Accommodation",
+      "content": "Kavatzi has a camping tradition, with tent camping popular among Bulgarian families and budget travelers. Basic camping facilities exist with simple amenities. Small guesthouses and private rooms are available in the area, but large hotels are absent. This keeps prices affordable and maintains a laid-back atmosphere. Visitors should expect modest conditions rather than resort luxury."
+    },
+    {
+      "heading": "Who Visits",
+      "content": "These beaches attract primarily Bulgarian families looking for affordable, quiet summer holidays, camping enthusiasts, and travelers exploring less-touristed areas of the southern coast. The proximity to Sozopol (about 10-15 km north) means day-trippers sometimes visit, but the areas remain much quieter than their famous neighbor. Those seeking vibrant nightlife or extensive facilities should look elsewhere, but visitors wanting peaceful, affordable beach access will appreciate the relaxed environment."
+    },
+    {
+      "heading": "Access and Timing",
+      "content": "The beaches are located along the main coastal road between Sozopol and Primorsko, accessible by car or local bus during summer season. Having personal transportation provides more convenience. Best swimming conditions are June through September. Weekends see more Bulgarian visitors, while weekdays can be very quiet. The areas work well as bases for exploring the southern Black Sea coast including Sozopol, Ropotamo, Arkutino, and other nearby attractions."
+    }
   ]
 }

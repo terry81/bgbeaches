@@ -133,5 +133,27 @@
         }
       ]
     }
+  ],
+  "gallery_description": [
+    {
+      "heading": "About Kavarna",
+      "content": "Kavarna is a historic coastal town on Bulgaria's northern Black Sea coast, known for its dramatic cliffs, archaeological sites, and emerging reputation as Bulgaria's rock music capital. Located between Balchik and Kaliakra Cape, Kavarna offers a different experience from typical beach resorts, combining coastal beauty with cultural heritage and unique geological formations. The town has ancient Greek and Roman roots, with remains visible throughout the area."
+    },
+    {
+      "heading": "Beaches and Coast",
+      "content": "Kavarna's coastline is characterized by high rocky cliffs interspersed with small beaches. The town's central beach is modest but functional, with fine sand and basic facilities. More interesting are the surrounding beach areas accessible by car or foot, featuring dramatic cliff backdrops and often fewer crowds than resort beaches. The rocky coast creates interesting swimming and snorkeling opportunities, with clear water and varied underwater topography."
+    },
+    {
+      "heading": "Rock Music Festival",
+      "content": "Kavarna has successfully branded itself as a rock music destination, hosting the annual Kavarna Rock Fest which has attracted major international acts including Deep Purple, Scorpions, Mötley Crüe, and many others. The Kaliakra Rock Fest brings thousands of music fans to outdoor concerts staged against the dramatic coastal backdrop. This cultural focus sets Kavarna apart from typical sun-and-sand resort towns."
+    },
+    {
+      "heading": "Historical Sites",
+      "content": "The area around Kavarna contains numerous archaeological sites and historical landmarks. The nearby Kaliakra Cape features ancient fortress ruins and dramatic 70-meter cliffs. Remains from Thracian, Greek, Roman, and Bulgarian medieval periods are scattered throughout the region. The town's archaeological museum displays artifacts spanning millennia of continuous habitation. Cape Kaliakra's legends and stunning coastal views make it one of Bulgaria's most visited natural landmarks."
+    },
+    {
+      "heading": "Practical Information",
+      "content": "Kavarna is located about 60 km northeast of Varna. The town has grown considerably with new residential and tourism development, particularly golf resorts in the surrounding area. Accommodation ranges from small guesthouses to larger resort hotels. June through September offers the best weather. Having a car is helpful for exploring nearby beaches, Kaliakra Cape, Balchik, and other northern coast attractions. The town offers authentic Bulgarian atmosphere while providing good tourist infrastructure."
+    }
   ]
 }

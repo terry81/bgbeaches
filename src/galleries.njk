@@ -6,6 +6,16 @@ pagination:
 permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 ---
 
+{% if gallery.gallery_description %}
+<div class="location-intro">
+  {% for section in gallery.gallery_description %}
+    <h2>{{ section.heading }}</h2>
+    <p align="justify">{{ section.content | markdownBold | safe }}</p>
+  {% endfor %}
+</div>
+<hr />
+{% endif %}
+
 <h2>{% if gallery.locale == 'bg' %}Фотогалерия{% else %}Photo Gallery{% endif %}</h2>
 
 <ul class="gallery">
@@ -24,6 +34,59 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 </ul>
 
 <div style="clear:both;"></div>
+
+<!-- Detailed Photo Descriptions for SEO and Content -->
+<div class="photo-descriptions">
+  <h2>{% if gallery.locale == 'bg' %}Детайлно описание на снимките{% else %}Detailed Photo Descriptions{% endif %}</h2>
+  {% for photo in gallery.photos %}
+    <div class="photo-detail" id="photo-{{ loop.index }}">
+      <h3>{{ loop.index }}. {{ photo.title }}</h3>
+      {% if photo.sections and photo.sections[0] and photo.sections[0].content %}
+        <p align="justify">{{ photo.sections[0].content }}</p>
+      {% endif %}
+      {% if photo.alt and photo.alt != ' ' %}
+        <p><em>{{ photo.alt }}</em></p>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>
+
+<style>
+.location-intro {
+  margin: 20px 0;
+}
+
+.photo-descriptions {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+}
+
+.photo-detail {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.photo-detail h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+.photo-detail p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.photo-detail em {
+  color: #666;
+  font-size: 0.95em;
+}
+</style>
 
 <!-- Lightbox Modal -->
 <div id="lightbox-modal" class="lightbox-modal">
@@ -284,16 +347,6 @@ function showPhoto(index) {
 }
 </style>
 
-{% if gallery.gallery_description %}
-<hr />
-{% endif %}
-
-{% if gallery.gallery_description %}
-  {% for section in gallery.gallery_description %}
-    <h2>{{ section.heading }}</h2>
-    <p align="justify">{{ section.content | markdownBold | safe }}</p>
-  {% endfor %}
-{% endif %}
 
 <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin: 30px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
   <p style="color: white; font-size: 1.1em; margin: 0 0 15px 0; line-height: 1.6;">

@@ -89,5 +89,27 @@
         }
       ]
     }
+  ],
+  "gallery_description": [
+    {
+      "heading": "About Arkutino",
+      "content": "Arkutino is a small, tranquil beach destination located on Bulgaria's southern Black Sea coast, between the towns of Primorsko and Kiten. Unlike the crowded mega-resorts further north, Arkutino represents the quieter, more natural side of Bulgaria's coastline, offering visitors seeking peace and unspoiled nature an ideal retreat. The area is characterized by the unique Arkutino marshland (Arkutino Swamp), a protected wetland area that creates a distinctive ecosystem where freshwater meets the sea."
+    },
+    {
+      "heading": "Natural Beauty",
+      "content": "The beach at Arkutino is relatively wide with fine golden sand, backed by natural dunes and the Arkutino marsh. The protected status of the surrounding wetlands means development is limited, preserving the natural landscape. Bird watchers particularly appreciate Arkutino as the marsh attracts numerous migratory species. The shallow, gradually deepening water makes it suitable for families, while the undeveloped surroundings appeal to nature lovers."
+    },
+    {
+      "heading": "Facilities and Amenities",
+      "content": "Arkutino offers basic beach infrastructure including some sunbed rentals and a few beach bars, but facilities are minimal compared to major resorts. Several small guesthouses and vacation rentals provide accommodation, mostly catering to Bulgarian families and visitors seeking quiet holidays. The lack of large hotels and commercial development is precisely what attracts many visitors who prefer natural settings."
+    },
+    {
+      "heading": "Best Time to Visit",
+      "content": "June through September offers good swimming conditions. July and August see more visitors but the beach rarely feels overcrowded. Early morning and evening visits provide the best opportunities for birdwatching in the adjacent marsh. Spring and autumn are ideal for nature enthusiasts interested in the wetland ecosystem."
+    },
+    {
+      "heading": "Getting There",
+      "content": "Arkutino is located approximately 50 km south of Burgas Airport. The area is best accessed by car as public transportation options are limited. The beach is a short walk from the main road between Primorsko and Kiten, making it accessible for day trips while exploring Bulgaria's southern coast."
+    }
   ]
 }
