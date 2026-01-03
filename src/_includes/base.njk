@@ -31,6 +31,19 @@
       {{ content | safe }}
     </div>
     <footer id="footer">
+      <div style="text-align: center; margin-bottom: 15px;">
+        {% if locale == 'bg' %}
+          <a href="/bg/" style="margin: 0 10px;">Начало</a> |
+          <a href="/bg/about/" style="margin: 0 10px;">За нас</a> |
+          <a href="/bg/privacy/" style="margin: 0 10px;">Поверителност</a> |
+          <a href="/en/" style="margin: 0 10px;">English</a>
+        {% else %}
+          <a href="/en/" style="margin: 0 10px;">Home</a> |
+          <a href="/en/about/" style="margin: 0 10px;">About</a> |
+          <a href="/en/privacy/" style="margin: 0 10px;">Privacy</a> |
+          <a href="/bg/" style="margin: 0 10px;">Български</a>
+        {% endif %}
+      </div>
       <p>Copyright © 2025 Bulgarian Beaches. All Rights Reserved. Contact us at: tollodim at gmail dot com</p>
     </footer>
   </div>
