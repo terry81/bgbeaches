@@ -146,5 +146,28 @@
         }
       ]
     }
-  ]
+  ],
+  "gallery_description": [
+    {
+      "heading": "About Kamchia",
+      "content": "Kamchia is a unique destination on Bulgaria's Black Sea coast, famous for the Kamchia River and its protected biosphere reserve. The area features the northernmost naturally occurring longoz forest (flooded lowland forest) in Europe, creating exceptional biodiversity. The Kamchia beach and resort sit where the river meets the Black Sea, offering visitors a rare combination of beach, river, and forest ecosystems all in one location."
+    },
+    {
+      "heading": "Natural Features",
+      "content": "The Kamchia Biosphere Reserve protects over 8,000 hectares of unique riparian forest, wetlands, and coastal ecosystems. The beach itself is wide with fine sand, while the river estuary creates interesting swimming opportunities in both sea and fresh water. Dense forests reach almost to the beach in some areas, providing natural shade. The area is important for numerous bird species and other wildlife, making it popular with nature enthusiasts and photographers."
+    },
+    {
+      "heading": "The Resort",
+      "content": "The Kamchia resort complex was developed during the socialist era, featuring several large hotels and holiday facilities. While showing its age, the resort offers affordable accommodation with direct beach access. The relative isolation from major urban centers helps maintain a peaceful atmosphere. Facilities include restaurants, sports courts, and entertainment options, though on a more modest scale than Bulgaria's mega-resorts."
+    },
+    {
+      "heading": "Activities",
+      "content": "Beyond beach activities, Kamchia offers boat trips along the river through the longoz forest, hiking trails in the biosphere reserve, birdwatching opportunities, and fishing. The combination of ecosystems creates diverse recreational possibilities. Visitors can kayak or canoe the river, explore forest trails, or simply enjoy the unique landscape where forest, river, and sea meet."
+    },
+    {
+      "heading": "Best Time to Visit and Access",
+      "content": "May through September provides good weather for all activities. Spring is particularly beautiful when the forest is lush and migratory birds pass through. Kamchia is located about 25 km south of Varna, accessible by car or bus. Having personal transportation is beneficial for exploring the biosphere reserve and nearby beaches. The area appeals to visitors seeking nature-focused holidays rather than party resort atmosphere."
+    }
+  ],
+  "name": "Kamchia"
 }

@@ -309,5 +309,27 @@
         }
       ]
     }
+  ],
+  "gallery_description": [
+    {
+      "heading": "About Saints Constantine and Helena",
+      "content": "Saints Constantine and Helena (Sveti Konstantin i Elena) is Bulgaria's oldest Black Sea resort, established in the late 19th century. Located just 8 km north of Varna, it offers a more refined, quieter alternative to the massive party resorts of Golden Sands and Sunny Beach. The resort is named after a monastery dedicated to these saints, which still stands in the area. Unlike purpose-built modern resorts, Saints Constantine and Helena developed organically over more than a century, resulting in a more mature, park-like atmosphere."
+    },
+    {
+      "heading": "The Resort Character",
+      "content": "The resort is characterized by extensive parks and gardens with mature trees providing natural shade, a more spacious layout compared to high-density resorts, mineral springs and spa facilities that were the original attraction, and a generally older, wealthier clientele seeking relaxation over nightlife. The beach areas are interspersed among rocky coves and small bays rather than one continuous beach, creating intimate swimming spots. Development is moderate-scale with fewer towering hotels, preserving views and natural landscape."
+    },
+    {
+      "heading": "Beaches and Waters",
+      "content": "The coastline features multiple small beaches and coves with fine sand, separated by rocky outcrops. This creates varied swimming environments - some areas with gentle sandy approaches ideal for families, others with rocks for exploration and snorkeling. The rocky areas contribute to clearer water compared to busy beaches with constant sand stirring. Beach facilities are available but less densely packed than at mega-resorts. The natural coves and rock formations provide visual interest and photographing opportunities."
+    },
+    {
+      "heading": "Spa and Wellness",
+      "content": "The resort's mineral springs contain sulfur, calcium, and other minerals believed to have therapeutic properties. Many hotels offer spa facilities, balneotherapy, and wellness treatments utilizing these natural resources. This wellness focus attracts visitors seeking health-oriented holidays rather than just beach relaxation. The spa tradition gives Saints Constantine and Helena a distinct identity among Bulgarian resorts, appealing to those interested in combining beach with therapeutic treatments."
+    },
+    {
+      "heading": "Practical Information",
+      "content": "The resort's proximity to Varna (8 km) makes it easily accessible from the airport and city. Regular buses connect the resort with Varna, making car rental optional though convenient for broader exploration. Accommodation ranges from modest guesthouses to upscale spa hotels, generally at higher price points than budget resorts. The season runs May through September, with June and September offering good weather without July-August crowds. The resort appeals to couples, families seeking quieter holidays, spa enthusiasts, and older travelers who appreciate the mature, refined atmosphere over party scenes."
+    }
   ]
 }

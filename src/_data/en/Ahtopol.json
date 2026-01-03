@@ -199,5 +199,27 @@
         }
       ]
     }
+  ],
+  "gallery_description": [
+    {
+      "heading": "About Ahtopol",
+      "content": "Ahtopol is a charming small coastal town located in southeastern Bulgaria, near the Turkish border. Unlike the massive resort complexes of Golden Sands and Sunny Beach, Ahtopol offers visitors an authentic Bulgarian Black Sea experience with a more relaxed, local atmosphere. The town sits on a small rocky peninsula, creating a unique setting with beaches on both sides and stunning sea views from various vantage points."
+    },
+    {
+      "heading": "The Beaches",
+      "content": "Ahtopol features several beaches, with the main central beach being the most accessible and popular. The sand is golden and relatively fine, though the beaches are smaller and more modest compared to Bulgaria's major resorts. Water quality is generally good, and the shallow approach makes it suitable for families with children. Beach infrastructure includes paid sunbeds and umbrellas, though there's usually space for visitors with their own equipment."
+    },
+    {
+      "heading": "Town Character",
+      "content": "The town retains much of its authentic character, with traditional Bulgarian architecture, local restaurants serving fresh seafood, and a slower pace of life. The population is predominantly local Bulgarian residents rather than international tourists, providing visitors with a genuine cultural experience. Small shops, cafes, and family-run businesses dominate rather than international chains."
+    },
+    {
+      "heading": "Best Time to Visit",
+      "content": "June and September offer excellent weather with fewer crowds compared to July-August peak season. Water temperatures are comfortable for swimming from mid-June through mid-September. Ahtopol is perfect for visitors seeking a quieter alternative to Bulgaria's mega-resorts while still enjoying good beach access and basic amenities."
+    },
+    {
+      "heading": "Getting There",
+      "content": "Ahtopol is located approximately 80 km south of Burgas. The nearest major airport is Burgas (BOJ), with regular bus connections to Ahtopol during summer season. Having a car provides more flexibility for exploring the southern Black Sea coast and visiting nearby attractions like Sinemorets and Rezovo."
+    }
   ]
 }
