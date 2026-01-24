@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default('en') }}">
+<html lang="{{ locale | default('en') }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,6 +7,10 @@
   {% if description %}
   <meta name="description" content="{{ description }}" />
   {% endif %}
+  <meta name="theme-color" content="#0077b6" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="/css/screen.css" />
   <link rel="stylesheet" href="/css/print.css" media="print" />
@@ -17,11 +21,25 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-YXJ7TPYVNB');
   </script>
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-container">
+      <a href="{% if locale == 'bg' %}/bg/{% else %}/en/{% endif %}" class="logo">
+        <span class="logo-icon">🏖️</span>
+        <span class="logo-text">{% if locale == 'bg' %}Българските Плажове{% else %}Bulgarian Beaches{% endif %}</span>
+      </a>
+      <nav class="main-nav">
+        <a href="{% if locale == 'bg' %}/bg/{% else %}/en/{% endif %}">{% if locale == 'bg' %}Начало{% else %}Home{% endif %}</a>
+        <a href="{% if locale == 'bg' %}/bg/about/{% else %}/en/about/{% endif %}">{% if locale == 'bg' %}За нас{% else %}About{% endif %}</a>
+        <a href="{% if locale == 'bg' %}/en/{% else %}/bg/{% endif %}" class="lang-switch">{% if locale == 'bg' %}🌐 English{% else %}🌐 Български{% endif %}</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
   <div id="page" class="page">
     <div id="content" class="content">
       {% if breadcrumbs %}
@@ -31,22 +49,57 @@
       {{ content | safe }}
     </div>
     <footer id="footer">
-      <div style="text-align: center; margin-bottom: 15px;">
-        {% if locale == 'bg' %}
-          <a href="/bg/" style="margin: 0 10px;">Начало</a> |
-          <a href="/bg/about/" style="margin: 0 10px;">За нас</a> |
-          <a href="/bg/privacy/" style="margin: 0 10px;">Поверителност</a> |
-          <a href="/en/" style="margin: 0 10px;">English</a>
-        {% else %}
-          <a href="/en/" style="margin: 0 10px;">Home</a> |
-          <a href="/en/about/" style="margin: 0 10px;">About</a> |
-          <a href="/en/privacy/" style="margin: 0 10px;">Privacy</a> |
-          <a href="/bg/" style="margin: 0 10px;">Български</a>
-        {% endif %}
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>{% if locale == 'bg' %}Навигация{% else %}Navigation{% endif %}</h4>
+          {% if locale == 'bg' %}
+            <a href="/bg/">Начало</a>
+            <a href="/bg/about/">За нас</a>
+            <a href="/bg/privacy/">Поверителност</a>
+          {% else %}
+            <a href="/en/">Home</a>
+            <a href="/en/about/">About</a>
+            <a href="/en/privacy/">Privacy</a>
+          {% endif %}
+        </div>
+        <div class="footer-section">
+          <h4>{% if locale == 'bg' %}Контакт{% else %}Contact{% endif %}</h4>
+          <p>📧 tollodim at gmail dot com</p>
+        </div>
+        <div class="footer-section">
+          <h4>{% if locale == 'bg' %}Език{% else %}Language{% endif %}</h4>
+          <a href="/en/">English</a>
+          <a href="/bg/">Български</a>
+        </div>
       </div>
-      <p>Copyright © 2025 Bulgarian Beaches. All Rights Reserved. Contact us at: tollodim at gmail dot com</p>
+      <div class="footer-bottom">
+        <p>Copyright 2007-2025 Bulgarian Beaches. All Rights Reserved.</p>
+        <p class="footer-tagline">{% if locale == 'bg' %}Документираме красотата на българското Черноморие от 2007 година{% else %}Documenting the beauty of Bulgaria's Black Sea coast since 2007{% endif %}</p>
+      </div>
     </footer>
   </div>
+
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script>
+    // Mobile menu toggle
+    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+    backToTop?.addEventListener('click', function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
 </body>
 </html>
 
