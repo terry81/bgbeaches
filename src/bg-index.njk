@@ -2,7 +2,9 @@
 layout: base.njk
 locale: bg
 title: Българските плажове
+seoTitle: Българските плажове | 46 плажни локации със снимки
 description: Открийте красивите плажове по българското Черноморие. Фотогалерия на 46 плажни локации с детайлни описания и снимки.
+image: /albums/Silistar/Beach.jpg
 permalink: bg/index.html
 ---
 
@@ -107,16 +109,17 @@ permalink: bg/index.html
 
 <hr />
 
-<ul class="gallery">
+<ul class="gallery" aria-label="Всички плажни дестинации по българското Черноморие">
 {% for location in locationsWithThumbs.bg %}
   <li>
-    <a href="/bg/{{ location.slug }}/">
+    <a href="/bg/{{ location.slug }}/" aria-label="Вижте пътеводител и фотогалерия за {{ location.name }}">
       <img src="/albums/{{ location.slug }}/{{ location.thumbnail }}"
            alt="{{ location.name }} - Българско Черноморие"
            loading="lazy"
-           onerror="this.src='/albums/About_us/us.JPG_TN';" />
-      <br />
-      {{ location.name }}
+           decoding="async"
+           onerror="this.src='/albums/Silistar/Beach.jpg_TN';" />
+      <span class="gallery-card__title">{{ location.name }}</span>
+      <span class="gallery-card__meta">{{ location.photoCount }} снимки</span>
     </a>
   </li>
 {% endfor %}

@@ -10,7 +10,7 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 <div class="location-intro">
   {% for section in gallery.gallery_description %}
     <h2>{{ section.heading }}</h2>
-    <p align="justify">{{ section.content | markdownBold | safe }}</p>
+    <p>{{ section.content | markdownBold | safe }}</p>
   {% endfor %}
 </div>
 <hr />
@@ -18,22 +18,20 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
 
 <h2>{% if gallery.locale == 'bg' %}Фотогалерия{% else %}Photo Gallery{% endif %}</h2>
 
-<ul class="gallery">
+<ul class="gallery gallery--photos" aria-label="{% if gallery.locale == 'bg' %}Снимки от {{ gallery.locationName }}{% else %}Photos from {{ gallery.locationName }}{% endif %}">
 {% for photo in gallery.photos %}
   <li>
-    <a href="#" data-photo-index="{{ loop.index0 }}" class="gallery-thumbnail">
+    <a href="/albums/{{ gallery.location }}/{{ photo.filename }}" data-photo-index="{{ loop.index0 }}" class="gallery-thumbnail" aria-label="{% if gallery.locale == 'bg' %}Отворете снимка: {{ photo.title }}{% else %}Open photo: {{ photo.title }}{% endif %}">
       {% set thumbnailName = photo.filename | replace('.jpg', '.jpg_TN') | replace('.JPG', '.JPG_TN') | replace('.png', '.png_TN') %}
       <img src="/albums/{{ gallery.location }}/{{ thumbnailName }}"
-           alt="{{ photo.title }}"
-           loading="lazy" />
-      <br />
-      {{ photo.title }}
+           alt="{% if photo.alt and photo.alt != ' ' %}{{ photo.alt | plainText }}{% else %}{{ photo.title }}{% endif %}"
+           loading="lazy"
+           decoding="async" />
+      <span class="gallery-card__title">{{ photo.title }}</span>
     </a>
   </li>
 {% endfor %}
 </ul>
-
-<div style="clear:both;"></div>
 
 <!-- Detailed Photo Descriptions for SEO and Content -->
 <div class="photo-descriptions">
@@ -42,7 +40,7 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
     <div class="photo-detail" id="photo-{{ loop.index }}">
       <h3>{{ loop.index }}. {{ photo.title }}</h3>
       {% if photo.sections and photo.sections[0] and photo.sections[0].content %}
-        <p align="justify">{{ photo.sections[0].content }}</p>
+        <p>{{ photo.sections[0].content | markdownBold | safe }}</p>
       {% endif %}
       {% if photo.alt and photo.alt != ' ' %}
         <p><em>{{ photo.alt }}</em></p>
@@ -51,49 +49,40 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
   {% endfor %}
 </div>
 
-<style>
-.location-intro {
-  margin: 20px 0;
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": {{ title | dump | safe }},
+  "url": "{{ page.url | absoluteUrl(site.url) }}",
+  "inLanguage": "{{ gallery.locale }}",
+  "associatedMedia": [
+    {% for photo in gallery.photos %}
+    {% set thumbnailName = photo.filename | replace('.jpg', '.jpg_TN') | replace('.JPG', '.JPG_TN') | replace('.png', '.png_TN') %}
+    {% set photoDescription = '' %}
+    {% if photo.sections and photo.sections[0] and photo.sections[0].content %}
+      {% set photoDescription = photo.sections[0].content | plainText %}
+    {% elif photo.alt and photo.alt != ' ' %}
+      {% set photoDescription = photo.alt | plainText %}
+    {% endif %}
+    {
+      "@type": "ImageObject",
+      "name": {{ photo.title | dump | safe }},
+      "description": {{ photoDescription | dump | safe }},
+      "contentUrl": "{{ ('/albums/' + gallery.location + '/' + photo.filename) | absoluteUrl(site.url) }}",
+      "thumbnailUrl": "{{ ('/albums/' + gallery.location + '/' + thumbnailName) | absoluteUrl(site.url) }}"
+    }{{ "," if not loop.last }}
+    {% endfor %}
+  ]
 }
-
-.photo-descriptions {
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: 2px solid #ddd;
-}
-
-.photo-detail {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.photo-detail h3 {
-  color: #2c3e50;
-  margin-top: 0;
-  margin-bottom: 15px;
-  font-size: 1.3em;
-}
-
-.photo-detail p {
-  line-height: 1.6;
-  color: #333;
-}
-
-.photo-detail em {
-  color: #666;
-  font-size: 0.95em;
-}
-</style>
+</script>
 
 <!-- Lightbox Modal -->
-<div id="lightbox-modal" class="lightbox-modal">
+<div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-labelledby="lightbox-title" hidden>
   <div class="lightbox-content">
-    <button class="lightbox-close">&times;</button>
-    <button class="lightbox-prev">&#10094;</button>
-    <button class="lightbox-next">&#10095;</button>
+    <button class="lightbox-close" type="button" aria-label="{% if gallery.locale == 'bg' %}Затвори{% else %}Close{% endif %}">&times;</button>
+    <button class="lightbox-prev" type="button" aria-label="{% if gallery.locale == 'bg' %}Предишна снимка{% else %}Previous photo{% endif %}">&#10094;</button>
+    <button class="lightbox-next" type="button" aria-label="{% if gallery.locale == 'bg' %}Следваща снимка{% else %}Next photo{% endif %}">&#10095;</button>
 
     <div class="lightbox-image-container">
       <img id="lightbox-image" src="" alt="" />
@@ -114,7 +103,7 @@ const galleryPhotos = [
     filename: "{{ photo.filename }}",
     title: {{ photo.title | dump | safe }},
     alt: {{ photo.alt | dump | safe }},
-    description: {{ photo.sections[0].content | dump | safe }}
+    description: {% if photo.sections and photo.sections[0] and photo.sections[0].content %}{{ photo.sections[0].content | plainText | dump | safe }}{% else %}""{% endif %}
   }{{ "," if not loop.last }}
 {% endfor %}
 ];
@@ -124,6 +113,9 @@ const lightboxModal = document.getElementById('lightbox-modal');
 const lightboxImage = document.getElementById('lightbox-image');
 const lightboxTitle = document.getElementById('lightbox-title');
 const lightboxText = document.getElementById('lightbox-text');
+const closeButton = document.querySelector('.lightbox-close');
+const previousButton = document.querySelector('.lightbox-prev');
+const nextButton = document.querySelector('.lightbox-next');
 let currentPhotoIndex = 0;
 
 // Open lightbox
@@ -132,13 +124,15 @@ document.querySelectorAll('.gallery-thumbnail').forEach(thumbnail => {
     e.preventDefault();
     currentPhotoIndex = parseInt(e.currentTarget.dataset.photoIndex);
     showPhoto(currentPhotoIndex);
-    lightboxModal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    lightboxModal.hidden = false;
+    lightboxModal.classList.add('is-visible');
+    document.body.classList.add('no-scroll');
+    closeButton?.focus();
   });
 });
 
 // Close lightbox
-document.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+closeButton?.addEventListener('click', closeLightbox);
 lightboxModal.addEventListener('click', (e) => {
   if (e.target === lightboxModal) {
     closeLightbox();
@@ -146,18 +140,19 @@ lightboxModal.addEventListener('click', (e) => {
 });
 
 function closeLightbox() {
-  lightboxModal.style.display = 'none';
-  document.body.style.overflow = 'auto';
+  lightboxModal.hidden = true;
+  lightboxModal.classList.remove('is-visible');
+  document.body.classList.remove('no-scroll');
 }
 
 // Navigation
-document.querySelector('.lightbox-prev').addEventListener('click', (e) => {
+previousButton?.addEventListener('click', (e) => {
   e.stopPropagation();
   currentPhotoIndex = (currentPhotoIndex - 1 + galleryPhotos.length) % galleryPhotos.length;
   showPhoto(currentPhotoIndex);
 });
 
-document.querySelector('.lightbox-next').addEventListener('click', (e) => {
+nextButton?.addEventListener('click', (e) => {
   e.stopPropagation();
   currentPhotoIndex = (currentPhotoIndex + 1) % galleryPhotos.length;
   showPhoto(currentPhotoIndex);
@@ -165,13 +160,13 @@ document.querySelector('.lightbox-next').addEventListener('click', (e) => {
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
-  if (lightboxModal.style.display === 'flex') {
+  if (!lightboxModal.hidden) {
     if (e.key === 'Escape') {
       closeLightbox();
     } else if (e.key === 'ArrowLeft') {
-      document.querySelector('.lightbox-prev').click();
+      previousButton?.click();
     } else if (e.key === 'ArrowRight') {
-      document.querySelector('.lightbox-next').click();
+      nextButton?.click();
     }
   }
 });
@@ -181,184 +176,24 @@ function showPhoto(index) {
   lightboxImage.src = `/albums/${galleryLocation}/${photo.filename}`;
   lightboxImage.alt = photo.alt || photo.title;
   lightboxTitle.textContent = photo.title;
-  lightboxText.innerHTML = `<p>${photo.description}</p>`;
+  lightboxText.textContent = '';
+  const paragraph = document.createElement('p');
+  paragraph.textContent = photo.description || photo.alt || '';
+  lightboxText.appendChild(paragraph);
 }
 </script>
 
-<style>
-.lightbox-modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
-  justify-content: center;
-  align-items: center;
-  overflow: auto;
-}
-
-.lightbox-content {
-  position: relative;
-  max-width: 1200px;
-  width: 90%;
-  margin: 20px auto;
-  background: #fff;
-  border-radius: 8px;
-  overflow: hidden;
-  max-height: 90vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.lightbox-close {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  border: none;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  z-index: 10001;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s;
-}
-
-.lightbox-close:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 30px;
-  font-weight: bold;
-  color: #fff;
-  background: rgba(0, 0, 0, 0.6);
-  border: none;
-  border-radius: 4px;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 10001;
-  transition: background 0.3s;
-}
-
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-.lightbox-prev {
-  left: 20px;
-}
-
-.lightbox-next {
-  right: 20px;
-}
-
-.lightbox-image-container {
-  flex: 0 0 auto;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 60vh;
-  overflow: hidden;
-}
-
-.lightbox-image-container img {
-  max-width: 100%;
-  max-height: 60vh;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.lightbox-description {
-  flex: 1 1 auto;
-  padding: 20px 30px;
-  background: #fff;
-  overflow-y: auto;
-  max-height: 30vh;
-}
-
-.lightbox-description h3 {
-  margin-top: 0;
-  color: #2c3e50;
-  font-size: 1.5em;
-  margin-bottom: 15px;
-}
-
-.lightbox-description p {
-  color: #333;
-  line-height: 1.6;
-  text-align: justify;
-  margin: 0;
-}
-
-.gallery-thumbnail {
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .lightbox-content {
-    width: 95%;
-    max-height: 95vh;
-  }
-
-  .lightbox-image-container {
-    max-height: 50vh;
-  }
-
-  .lightbox-image-container img {
-    max-height: 50vh;
-  }
-
-  .lightbox-description {
-    max-height: 40vh;
-    padding: 15px 20px;
-  }
-
-  .lightbox-prev,
-  .lightbox-next {
-    padding: 8px 12px;
-    font-size: 24px;
-  }
-
-  .lightbox-close {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    top: 5px;
-    right: 10px;
-  }
-}
-</style>
-
-
-<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px; border-radius: 10px; margin: 30px 0; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
-  <p style="color: white; font-size: 1.1em; margin: 0 0 15px 0; line-height: 1.6;">
+<div class="ad-cta">
+  <p>
     {% if gallery.locale == 'bg' %}
       📸 <strong>Харесват ли ви снимките?</strong> ✨Научете се да снимате и вие така професионално! 🎓
-      <span style="font-size: 0.95em;">Открийте тайните на перфектната фотография</span>
+      <span>Открийте тайните на перфектната фотография</span>
     {% else %}
       📸 <strong>Do you like these photos?</strong> ✨Learn to take photos like this professionally! 🎓<br>
-      <span style="font-size: 0.95em;">Discover the secrets of perfect photography</span>
+      <span>Discover the secrets of perfect photography</span>
     {% endif %}
   </p>
-  <a href="https://greatphotoart.com" target="_blank" rel="noopener" style="display: inline-block; background: white; color: #667eea; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: all 0.3s ease; box-shadow: 0 2px 10px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 4px 20px rgba(0,0,0,0.3)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 2px 10px rgba(0,0,0,0.2)';">
+  <a href="https://greatphotoart.com" target="_blank" rel="noopener" class="ad-cta__button">
     {% if gallery.locale == 'bg' %}
       🎯 Курс по фотография →
     {% else %}

@@ -1,19 +1,100 @@
 <!DOCTYPE html>
-<html lang="{{ locale | default('en') }}">
+{% set activeLocale = locale | default('en') %}
+{% set pageTitle = seoTitle | default(title) | default(site.title) %}
+{% set pageDescription = description | default(site.description[activeLocale]) | default(site.description.en) | plainText %}
+{% set canonicalPath = canonicalUrl | default(page.url) | default('/') %}
+{% set canonicalHref = canonicalPath | absoluteUrl(site.url) %}
+{% set socialImage = image | default(site.defaultImage) | absoluteUrl(site.url) %}
+{% set alternateLocale = 'bg' if activeLocale == 'en' else 'en' %}
+{% set currentLocalePath = page.url | localizedUrl(activeLocale) %}
+{% set alternateLocalePath = page.url | localizedUrl(alternateLocale) %}
+{% if page.url == '/' %}
+  {% set xDefaultPath = '/' %}
+{% else %}
+  {% set xDefaultPath = page.url | localizedUrl('en') %}
+{% endif %}
+<html lang="{{ activeLocale }}">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ title | default('Bulgarian Beaches') }}</title>
-  {% if description %}
-  <meta name="description" content="{{ description }}" />
-  {% endif %}
-  <meta name="theme-color" content="#0077b6" />
+  <title>{{ pageTitle | escape }}</title>
+  <meta name="description" content="{{ pageDescription | escape }}" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="{{ site.themeColor }}" />
+  <meta name="color-scheme" content="light" />
+  <link rel="canonical" href="{{ canonicalHref }}" />
+  <link rel="alternate" hreflang="{{ activeLocale }}" href="{{ currentLocalePath | absoluteUrl(site.url) }}" />
+  <link rel="alternate" hreflang="{{ alternateLocale }}" href="{{ alternateLocalePath | absoluteUrl(site.url) }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ xDefaultPath | absoluteUrl(site.url) }}" />
+  <meta property="og:site_name" content="{{ site.name | escape }}" />
+  <meta property="og:type" content="{% if gallery %}article{% else %}website{% endif %}" />
+  <meta property="og:title" content="{{ pageTitle | escape }}" />
+  <meta property="og:description" content="{{ pageDescription | escape }}" />
+  <meta property="og:url" content="{{ canonicalHref }}" />
+  <meta property="og:image" content="{{ socialImage }}" />
+  <meta property="og:image:alt" content="{{ pageTitle | escape }}" />
+  <meta property="og:locale" content="{{ site.locales[activeLocale] | default('en_US') }}" />
+  <meta property="og:locale:alternate" content="{{ site.locales[alternateLocale] | default('bg_BG') }}" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{ pageTitle | escape }}" />
+  <meta name="twitter:description" content="{{ pageDescription | escape }}" />
+  <meta name="twitter:image" content="{{ socialImage }}" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/screen.css" />
   <link rel="stylesheet" href="/css/print.css" media="print" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{% if gallery %}CollectionPage{% else %}WebPage{% endif %}",
+    "name": {{ pageTitle | dump | safe }},
+    "description": {{ pageDescription | dump | safe }},
+    "url": "{{ canonicalHref }}",
+    "inLanguage": "{{ activeLocale }}",
+    "dateModified": "{{ site.lastModified }}",
+    "image": "{{ socialImage }}",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": {{ site.name | dump | safe }},
+      "url": "{{ site.url }}/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": {{ site.name | dump | safe }},
+      "url": "{{ site.url }}/"
+    }{% if gallery %},
+    "about": {
+      "@type": "Place",
+      "name": {{ gallery.locationName | default(gallery.title) | dump | safe }},
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BG"
+      }
+    }{% endif %}
+  }
+  </script>
+  {% if gallery and gallery.breadcrumbs %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {% for crumb in gallery.breadcrumbs %}
+      {
+        "@type": "ListItem",
+        "position": {{ loop.index }},
+        "name": {{ crumb.title | dump | safe }},
+        "item": "{{ crumb.url | default(page.url) | absoluteUrl(site.url) }}"
+      }{{ "," if not loop.last }}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-YXJ7TPYVNB"></script>
@@ -25,34 +106,35 @@
   </script>
 </head>
 <body>
+  <a class="skip-link" href="#content">{% if activeLocale == 'bg' %}Към съдържанието{% else %}Skip to content{% endif %}</a>
   <header class="site-header">
     <div class="header-container">
-      <a href="{% if locale == 'bg' %}/bg/{% else %}/en/{% endif %}" class="logo">
+      <a href="{% if activeLocale == 'bg' %}/bg/{% else %}/en/{% endif %}" class="logo" aria-label="{% if activeLocale == 'bg' %}Българските плажове - начало{% else %}Bulgarian Beaches home{% endif %}">
         <span class="logo-icon">🏖️</span>
-        <span class="logo-text">{% if locale == 'bg' %}Българските Плажове{% else %}Bulgarian Beaches{% endif %}</span>
+        <span class="logo-text">{% if activeLocale == 'bg' %}Българските Плажове{% else %}Bulgarian Beaches{% endif %}</span>
       </a>
-      <nav class="main-nav">
-        <a href="{% if locale == 'bg' %}/bg/{% else %}/en/{% endif %}">{% if locale == 'bg' %}Начало{% else %}Home{% endif %}</a>
-        <a href="{% if locale == 'bg' %}/bg/about/{% else %}/en/about/{% endif %}">{% if locale == 'bg' %}За нас{% else %}About{% endif %}</a>
-        <a href="{% if locale == 'bg' %}/en/{% else %}/bg/{% endif %}" class="lang-switch">{% if locale == 'bg' %}🌐 English{% else %}🌐 Български{% endif %}</a>
+      <nav class="main-nav" id="main-nav" aria-label="{% if activeLocale == 'bg' %}Основна навигация{% else %}Main navigation{% endif %}">
+        <a href="{% if activeLocale == 'bg' %}/bg/{% else %}/en/{% endif %}">{% if activeLocale == 'bg' %}Начало{% else %}Home{% endif %}</a>
+        <a href="{% if activeLocale == 'bg' %}/bg/about/{% else %}/en/about/{% endif %}">{% if activeLocale == 'bg' %}За нас{% else %}About{% endif %}</a>
+        <a href="{{ alternateLocalePath }}" class="lang-switch" hreflang="{{ alternateLocale }}">{% if activeLocale == 'bg' %}🌐 English{% else %}🌐 Български{% endif %}</a>
       </nav>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+      <button class="mobile-menu-toggle" type="button" aria-label="{% if activeLocale == 'bg' %}Отвори меню{% else %}Toggle menu{% endif %}" aria-controls="main-nav" aria-expanded="false">☰</button>
     </div>
   </header>
 
   <div id="page" class="page">
-    <div id="content" class="content">
+    <main id="content" class="content main-content" tabindex="-1">
       {% if breadcrumbs %}
       <div class="breadcrumbs">{{ breadcrumbs | safe }}</div>
       {% endif %}
       <h1>{{ title }}</h1>
       {{ content | safe }}
-    </div>
+    </main>
     <footer id="footer">
       <div class="footer-container">
         <div class="footer-section">
-          <h4>{% if locale == 'bg' %}Навигация{% else %}Navigation{% endif %}</h4>
-          {% if locale == 'bg' %}
+          <h4>{% if activeLocale == 'bg' %}Навигация{% else %}Navigation{% endif %}</h4>
+          {% if activeLocale == 'bg' %}
             <a href="/bg/">Начало</a>
             <a href="/bg/about/">За нас</a>
             <a href="/bg/privacy/">Поверителност</a>
@@ -63,42 +145,53 @@
           {% endif %}
         </div>
         <div class="footer-section">
-          <h4>{% if locale == 'bg' %}Контакт{% else %}Contact{% endif %}</h4>
+          <h4>{% if activeLocale == 'bg' %}Контакт{% else %}Contact{% endif %}</h4>
           <p>📧 tollodim at gmail dot com</p>
         </div>
         <div class="footer-section">
-          <h4>{% if locale == 'bg' %}Език{% else %}Language{% endif %}</h4>
+          <h4>{% if activeLocale == 'bg' %}Език{% else %}Language{% endif %}</h4>
           <a href="/en/">English</a>
           <a href="/bg/">Български</a>
         </div>
       </div>
       <div class="footer-bottom">
         <p>Copyright 2007-2026 Bulgarian Beaches. All Rights Reserved.</p>
-        <p class="footer-tagline">{% if locale == 'bg' %}Документираме красотата на българското Черноморие от 2007 година{% else %}Documenting the beauty of Bulgaria's Black Sea coast since 2007{% endif %}</p>
+        <p class="footer-tagline">{% if activeLocale == 'bg' %}Документираме красотата на българското Черноморие от 2007 година{% else %}Documenting the beauty of Bulgaria's Black Sea coast since 2007{% endif %}</p>
       </div>
     </footer>
   </div>
 
-  <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+  <button id="back-to-top" class="back-to-top" type="button" aria-label="{% if activeLocale == 'bg' %}Обратно нагоре{% else %}Back to top{% endif %}">↑</button>
 
   <script>
     // Mobile menu toggle
-    document.querySelector('.mobile-menu-toggle')?.addEventListener('click', function() {
-      document.querySelector('.main-nav').classList.toggle('open');
+    const menuToggle = document.querySelector('.mobile-menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    menuToggle?.addEventListener('click', function() {
+      const isOpen = mainNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+    });
+    mainNav?.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mainNav.classList.remove('open');
+        menuToggle?.setAttribute('aria-expanded', 'false');
+      });
     });
 
     // Back to top button
     const backToTop = document.getElementById('back-to-top');
-    window.addEventListener('scroll', function() {
-      if (window.scrollY > 300) {
-        backToTop.classList.add('visible');
-      } else {
-        backToTop.classList.remove('visible');
-      }
-    });
-    backToTop?.addEventListener('click', function() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    if (backToTop) {
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 300) {
+          backToTop.classList.add('visible');
+        } else {
+          backToTop.classList.remove('visible');
+        }
+      }, { passive: true });
+      backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
   </script>
 </body>
 </html>
