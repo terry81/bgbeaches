@@ -1,4 +1,6 @@
 module.exports = function(eleventyConfig) {
+  const defaultSiteUrl = 'https://bgbeaches.com';
+
   // Safe HTML tag stripping: loops until no tags remain, preventing
   // incomplete multi-character sanitization (CodeQL js/incomplete-multi-character-sanitization).
   // A single-pass replace(/<[^>]*>/g, '') can be bypassed with nested input
@@ -14,6 +16,39 @@ module.exports = function(eleventyConfig) {
     } while (result !== previous);
     // Remove any remaining stray < or > characters
     return result.replace(/[<>]/g, '');
+  }
+
+  function normalizePath(url) {
+    if (!url) return '/';
+    const stringUrl = String(url);
+    if (/^https?:\/\//i.test(stringUrl)) return stringUrl;
+    return stringUrl.startsWith('/') ? stringUrl : `/${stringUrl}`;
+  }
+
+  function absoluteUrl(url, siteUrl = defaultSiteUrl) {
+    const stringUrl = String(url || '/');
+    if (/^https?:\/\//i.test(stringUrl)) return stringUrl;
+    return `${String(siteUrl).replace(/\/+$/, '')}${normalizePath(stringUrl)}`;
+  }
+
+  function localizedUrl(url, targetLocale = 'en') {
+    const path = normalizePath(url);
+    if (/^https?:\/\//i.test(path)) return path;
+    if (path === '/' || path === '/index.html') return `/${targetLocale}/`;
+    if (path === '/bg' || path === '/bg/') return `/${targetLocale}/`;
+    if (path === '/en' || path === '/en/') return `/${targetLocale}/`;
+    if (path.startsWith('/bg/')) return `/${targetLocale}/${path.slice(4)}`;
+    if (path.startsWith('/en/')) return `/${targetLocale}/${path.slice(4)}`;
+    return `/${targetLocale}${path}`.replace(/\/+/g, '/');
+  }
+
+  function plainText(content) {
+    if (!content) return '';
+    return stripHtmlTags(content)
+      .replace(/\*\*([^*]+)\*\*/g, '$1')
+      .replace(/[`*_~#>]/g, '')
+      .replace(/\s+/g, ' ')
+      .trim();
   }
 
   // Passthrough copy for static assets
@@ -43,6 +78,12 @@ module.exports = function(eleventyConfig) {
     if (!content) return '';
     return stripHtmlTags(content).replace(/\s+/g, ' ').trim();
   });
+
+  eleventyConfig.addFilter("plainText", plainText);
+
+  eleventyConfig.addFilter("absoluteUrl", absoluteUrl);
+
+  eleventyConfig.addFilter("localizedUrl", localizedUrl);
 
   // Filter to count words in content after safely stripping HTML
   eleventyConfig.addFilter("wordCount", function(content) {

@@ -2,7 +2,9 @@
 layout: base.njk
 locale: en
 title: Bulgarian Beaches
+seoTitle: Bulgarian Beaches | 46 Black Sea Beach Guides and Photos
 description: Discover beautiful beaches along the Bulgarian Black Sea coast. Photo gallery of 46 beach locations with detailed guides, travel tips, and stunning photography.
+image: /albums/Silistar/Beach.jpg
 permalink: en/index.html
 ---
 
@@ -109,16 +111,17 @@ permalink: en/index.html
 
 <hr />
 
-<ul class="gallery">
+<ul class="gallery" aria-label="All Bulgarian beach destinations">
 {% for location in locationsWithThumbs.en %}
   <li>
-    <a href="/en/{{ location.slug }}/">
+    <a href="/en/{{ location.slug }}/" aria-label="View {{ location.name }} beach guide and photo gallery">
       <img src="/albums/{{ location.slug }}/{{ location.thumbnail }}"
            alt="{{ location.name }} Beach - Bulgarian Black Sea Coast"
            loading="lazy"
-           onerror="this.src='/albums/About_us/us.JPG_TN';" />
-      <br />
-      {{ location.name }}
+           decoding="async"
+           onerror="this.src='/albums/Silistar/Beach.jpg_TN';" />
+      <span class="gallery-card__title">{{ location.name }}</span>
+      <span class="gallery-card__meta">{{ location.photoCount }} photos</span>
     </a>
   </li>
 {% endfor %}
