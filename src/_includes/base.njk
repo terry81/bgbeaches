@@ -145,6 +145,14 @@
           {% endif %}
         </div>
         <div class="footer-section">
+          <h4>{% if activeLocale == 'bg' %}Партньори{% else %}Partners{% endif %}</h4>
+          {% if activeLocale == 'bg' %}
+            <a href="https://greatphotoart.com/" rel="noopener">Great Photo Art - Курсове по фотография</a>
+          {% else %}
+            <a href="https://greatphotoart.com/" rel="noopener">Great Photo Art - Photography Courses</a>
+          {% endif %}
+        </div>
+        <div class="footer-section">
           <h4>{% if activeLocale == 'bg' %}Контакт{% else %}Contact{% endif %}</h4>
           <p>📧 tollodim at gmail dot com</p>
         </div>
