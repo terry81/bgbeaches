@@ -25,15 +25,15 @@
   },
   "homepage": "https://github.com/terry81/bgbeaches#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy": "^3.1.7",
     "sharp": "0.35.5"
   },
   "overrides": {
     "flatted": "^3.4.2",
-    "js-yaml": "4.3.2",
+    "js-yaml": "5.5.0",
     "linkify-it": "5.0.2",
     "liquidjs": "10.27.2",
-    "markdown-it": "14.3.3",
+    "markdown-it": "15.0.3",
     "minimatch": "^3.1.5",
     "brace-expansion": "1.1.21",
     "sharp": "0.35.5",
