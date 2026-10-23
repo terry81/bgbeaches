@@ -26,7 +26,7 @@
   "homepage": "https://github.com/terry81/bgbeaches#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "sharp": "0.35.3"
+    "sharp": "0.35.5"
   },
   "overrides": {
     "flatted": "^3.4.2",
@@ -35,7 +35,7 @@
     "liquidjs": "10.27.2",
     "markdown-it": "14.3.0",
     "minimatch": "^3.1.5",
-    "sharp": "0.35.3",
+    "sharp": "0.35.5",
     "chokidar": {
       "anymatch": {
         "picomatch": "^2.3.2"
