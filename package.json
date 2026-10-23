@@ -4,15 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "node scripts/ensure-ads-txt.js",
+    "prebuild": "npm run clean",
     "build": "eleventy",
-    "postbuild": "node scripts/ensure-ads-txt.js",
     "postinstall": "node scripts/patch-vulnerable-deps.js",
     "serve": "eleventy --serve",
     "start": "eleventy --serve",
     "clean": "rm -rf _site",
-    "build:production": "NODE_ENV=production eleventy",
-    "ensure-ads": "node scripts/ensure-ads-txt.js"
+    "build:production": "NODE_ENV=production npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,7 +26,7 @@
   "homepage": "https://github.com/terry81/bgbeaches#readme",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
-    "@11ty/eleventy-img": "^6.0.4"
+    "sharp": "0.35.3"
   },
   "overrides": {
     "flatted": "^3.4.2",

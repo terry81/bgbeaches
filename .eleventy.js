@@ -1,6 +1,8 @@
 module.exports = function(eleventyConfig) {
   const defaultSiteUrl = 'https://bgbeaches.com';
 
+  eleventyConfig.on('eleventy.after', require('./scripts/optimize-images'));
+
   // Safe HTML tag stripping: loops until no tags remain, preventing
   // incomplete multi-character sanitization (CodeQL js/incomplete-multi-character-sanitization).
   // A single-pass replace(/<[^>]*>/g, '') can be bypassed with nested input
@@ -55,7 +57,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({
     "css": "css",
     "src/albums": "albums",
-    "scripts": "scripts",
     "ads.txt": "ads.txt",
     "robots.txt": "robots.txt",
     "CNAME": "CNAME"

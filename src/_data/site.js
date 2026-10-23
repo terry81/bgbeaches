@@ -1,4 +1,18 @@
+const { execFileSync } = require('node:child_process');
+
 const siteUrl = 'https://bgbeaches.com';
+function lastModified() {
+  if (process.env.SITE_LASTMOD) return process.env.SITE_LASTMOD;
+  try {
+    return execFileSync('git', ['log', '-1', '--format=%cs'], {
+      encoding: 'utf8',
+      stdio: ['ignore', 'pipe', 'ignore']
+    }).trim();
+  } catch {
+    // Source archives may not contain .git; keep builds deterministic there too.
+    return '2007-01-01';
+  }
+}
 
 module.exports = {
   url: siteUrl,
@@ -15,6 +29,6 @@ module.exports = {
     en: 'en_US',
     bg: 'bg_BG'
   },
-  lastModified: process.env.SITE_LASTMOD || new Date().toISOString().slice(0, 10)
+  lastModified: lastModified()
 };
 

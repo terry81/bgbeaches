@@ -23,10 +23,14 @@ permalink: "{{ gallery.locale }}/{{ gallery.location }}/index.html"
   <li>
     <a href="/albums/{{ gallery.location }}/{{ photo.filename }}" data-photo-index="{{ loop.index0 }}" class="gallery-thumbnail" aria-label="{% if gallery.locale == 'bg' %}Отворете снимка: {{ photo.title }}{% else %}Open photo: {{ photo.title }}{% endif %}">
       {% set thumbnailName = photo.filename | replace('.jpg', '.jpg_TN') | replace('.JPG', '.JPG_TN') | replace('.png', '.png_TN') %}
-      <img src="/albums/{{ gallery.location }}/{{ thumbnailName }}"
-           alt="{% if photo.alt and photo.alt != ' ' %}{{ photo.alt | plainText }}{% else %}{{ photo.title }}{% endif %}"
-           loading="lazy"
-           decoding="async" />
+      <picture>
+        <source srcset="/albums/{{ gallery.location }}/{{ thumbnailName }}.webp" type="image/webp" />
+        <img src="/albums/{{ gallery.location }}/{{ thumbnailName }}"
+             alt="{% if photo.alt and photo.alt != ' ' %}{{ photo.alt | plainText }}{% else %}{{ photo.title }}{% endif %}"
+             width="140" height="93"
+             loading="lazy"
+             decoding="async" />
+      </picture>
       <span class="gallery-card__title">{{ photo.title }}</span>
     </a>
   </li>
@@ -173,7 +177,11 @@ document.addEventListener('keydown', (e) => {
 
 function showPhoto(index) {
   const photo = galleryPhotos[index];
-  lightboxImage.src = `/albums/${galleryLocation}/${photo.filename}`;
+  lightboxImage.onerror = () => {
+    lightboxImage.onerror = null;
+    lightboxImage.src = `/albums/${galleryLocation}/${photo.filename}`;
+  };
+  lightboxImage.src = `/albums/${galleryLocation}/${photo.filename}.webp`;
   lightboxImage.alt = photo.alt || photo.title;
   lightboxTitle.textContent = photo.title;
   lightboxText.textContent = '';
