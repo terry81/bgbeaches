@@ -80,21 +80,15 @@ for (const liquidBundle of [
   patchFile(liquidBundle, [liquidStripHtmlPatch, liquidSpawnPatch]);
 }
 
-patchFile('node_modules/gray-matter/lib/engines.js', [
+patchFile('node_modules/@11ty/eleventy/src/UserConfig.js', [
   replaceSnippet({
-    name: 'gray-matter js-yaml v4 compatibility',
-    vulnerable: `engines.yaml = {
-  parse: yaml.safeLoad.bind(yaml),
-  stringify: yaml.safeDump.bind(yaml)
-};`,
-    patched: `const yamlLoad = typeof yaml.load === 'function' ? yaml.load : yaml.safeLoad;
-const yamlDump = typeof yaml.dump === 'function' ? yaml.dump : yaml.safeDump;
-
-engines.yaml = {
-  parse: yamlLoad.bind(yaml),
-  stringify: yamlDump.bind(yaml)
-};`,
-    alreadyPatched: 'const yamlLoad = typeof yaml.load'
+    name: 'Eleventy js-yaml v5 ESM interop',
+    vulnerable: 'import yaml from "js-yaml";',
+    patched: 'import * as yamlNs from "js-yaml";\nconst yaml = yamlNs.default ?? yamlNs;',
+    alreadyPatched: [
+      'import * as yamlNs from "js-yaml";',
+      'const yaml = yamlNs.default ?? yamlNs;'
+    ]
   })
 ]);
 
