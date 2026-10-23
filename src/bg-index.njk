@@ -113,11 +113,14 @@ permalink: bg/index.html
 {% for location in locationsWithThumbs.bg %}
   <li>
     <a href="/bg/{{ location.slug }}/" aria-label="Вижте пътеводител и фотогалерия за {{ location.name }}">
-      <img src="/albums/{{ location.slug }}/{{ location.thumbnail }}"
-           alt="{{ location.name }} - Българско Черноморие"
-           loading="lazy"
-           decoding="async"
-           onerror="this.src='/albums/Silistar/Beach.jpg_TN';" />
+      <picture>
+        <source srcset="/albums/{{ location.slug }}/{{ location.thumbnail }}.webp" type="image/webp" />
+        <img src="/albums/{{ location.slug }}/{{ location.thumbnail }}"
+             alt="{{ location.name }} - Българско Черноморие"
+             width="140" height="93"
+             loading="lazy"
+             decoding="async" />
+      </picture>
       <span class="gallery-card__title">{{ location.name }}</span>
       <span class="gallery-card__meta">{{ location.photoCount }} снимки</span>
     </a>

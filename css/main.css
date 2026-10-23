@@ -591,7 +591,14 @@ a:focus {
   text-decoration: none;
 }
 
+.gallery li picture {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
 .gallery li img {
+  display: block;
   width: 100%;
   height: 150px;
   object-fit: cover;

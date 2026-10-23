@@ -5,8 +5,8 @@ module.exports = function() {
   const locationsData = require('./locations.json');
   const enrichedData = { bg: [], en: [] };
 
-  // Path to albums folder (root level, before copying to src)
-  const albumsPath = path.join(__dirname, '../../albums');
+  // Albums are stored under src and copied to the site root by Eleventy.
+  const albumsPath = path.join(__dirname, '../albums');
 
   for (const locale of ['bg', 'en']) {
     for (const location of locationsData[locale]) {
